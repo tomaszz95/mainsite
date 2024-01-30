@@ -21,7 +21,7 @@ export default function RootLayout({
 			<body className={roboto.className}>
 				<div className='flex flex-col items-center'>
 					<Header />
-					<div className='bg-darkGrey w-screen'>{children}</div>
+					<main className='w-screen flex flex-col justify-center items-center'>{children}</main>
 					<Footer />
 				</div>
 			</body>

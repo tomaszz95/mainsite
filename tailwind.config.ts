@@ -7,14 +7,18 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		colors: {
-			primary: '#141414',
-			darkGrey: '#1f1f1f',
-			secondary: '#f5fbef',
-			greylish: '#dfdbdb',
-			hightlight: '#27c80f',
+		extend: {
+			colors: {
+				primary: '#121a26',
+				secondary: '#f5fbef',
+				navigation: '#101322',
+				greylish: '#dfdbdb',
+				hightlight: '#27c80f',
+				hightlightSecond: '#b70cc7',
+			},
 		},
 	},
 	plugins: [],
 }
+
 export default config
