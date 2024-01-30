@@ -3,25 +3,23 @@ import Link from 'next/link'
 
 import LOGO from '../../assets/icons/logo.png'
 
-const Header = () => {
+export default function Header() {
 	return (
-		<header className='container mx-auto p-6 w-100 flex items-center justify-between'>
+		<header className='container py-6 px-12 flex items-center justify-between'>
 			<Link href='/'>
-				<Image src={LOGO} alt='Tomasz Żuber logo' className='w-16 lg:w-20' priority />
+				<Image src={LOGO} alt='Tomasz Żuber logo' className='w-14 lg:w-16' priority />
 			</Link>
-			<nav className='flex gap-4 text-lg lg:text-xl'>
-				<Link href='/about' className='hover:text-hightlight duration-300'>
+			<nav className='flex gap-4 md:gap-5 lg:gap-6 xl:gap-8 text-lg lg:text-xl'>
+				<Link href='/about' className='hover:text-hightlight duration-300 lg:p-3'>
 					About
 				</Link>
-				<Link href='/about' className='hover:text-hightlight duration-300'>
+				<Link href='/about' className='hover:text-hightlight duration-300 lg:p-3'>
 					Projects
 				</Link>
-				<Link href='/about' className='hover:text-hightlight duration-300'>
+				<Link href='/about' className='hover:text-hightlight duration-300 lg:p-3'>
 					Contact
 				</Link>
 			</nav>
 		</header>
 	)
 }
-
-export default Header
