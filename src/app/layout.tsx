@@ -11,20 +11,22 @@ const roboto = Roboto({
 	display: 'swap',
 })
 
-export default function RootLayout({
-	children,
-}: Readonly<{
+type ComponentType = {
 	children: React.ReactNode
-}>) {
+}
+
+const RootLayout: React.FC<ComponentType> = ({ children }) => {
 	return (
 		<html lang='en'>
-			<body className={roboto.className}>
-				<div className='flex flex-col items-center'>
+			<body className={`${roboto.className} flex flex-col justify-center items-center`}>
+				<div className='flex flex-col items-center w-full max-w-[1300px] overflow-hidden'>
 					<Header />
-					<main className='w-screen flex flex-col justify-center items-center'>{children}</main>
+					<main className='w-full flex flex-col justify-center items-center'>{children}</main>
 					<Footer />
 				</div>
 			</body>
 		</html>
 	)
 }
+
+export default RootLayout
