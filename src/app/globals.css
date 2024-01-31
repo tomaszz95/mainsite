@@ -4,7 +4,6 @@
 
 body {
 	width: 100%;
-	height: 100vh;
 	background-color: #121a26;
 	color: #f5fbef;
 }
@@ -20,5 +19,4 @@ ul {
 button,
 a {
 	cursor: pointer;
-	/* color: #890d94; */
 }
