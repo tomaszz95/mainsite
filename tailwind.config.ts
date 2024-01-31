@@ -11,7 +11,7 @@ const config: Config = {
 			colors: {
 				primary: '#121a26',
 				secondary: '#f5fbef',
-				navigation: '#101322',
+				navigation: '#101022',
 				greylish: '#dfdbdb',
 				hightlight: '#27c80f',
 				hightlightHover: '#109f0f',

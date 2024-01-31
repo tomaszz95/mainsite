@@ -1,4 +1,4 @@
-import CenteredSection from '@/components/layout/CenteredSection'
+import AboutMeSection from '@/components/homepage/AboutMeSection'
 import type { Metadata } from 'next'
 
 import HeroSection from '../components/homepage/HeroSection'
@@ -12,6 +12,7 @@ const Homepage = () => {
 	return (
 		<>
 			<HeroSection />
+			<AboutMeSection />
 		</>
 	)
 }

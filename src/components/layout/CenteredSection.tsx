@@ -6,7 +6,7 @@ interface ComponentType {
 }
 
 const CenteredSection: React.FC<ComponentType> = ({ children, classes }) => {
-	return <section className={`${classes} w-full container my-8 p-6`}>{children}</section>
+	return <section className={`w-full container my-8 p-6 ${classes}`}>{children}</section>
 }
 
 export default CenteredSection
