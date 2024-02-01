@@ -9,11 +9,11 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#121a26',
+				primary: '#101022',
 				secondary: '#f5fbef',
-				navigation: '#101022',
+				main: '#121a26',
 				greylish: '#dfdbdb',
-				hightlight: '#27c80f',
+				hightlight: '#00bd00',
 				hightlightHover: '#109f0f',
 				hightlightSecond: '#b70cc7',
 				hightlightSecondHover: '#890d94',

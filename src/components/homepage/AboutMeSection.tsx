@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import IMAGE from '../../assets/photos/programming1.jpg'
+import IMAGE from '../../assets/photos/aboutme.jpg'
 import CenteredSection from '../layout/CenteredSection'
 
 const AboutMeSection = () => {
 	return (
-		<div className='bg-navigation w-full'>
+		<div className='bg-main w-full xl:py-10'>
 			<CenteredSection classes='flex flex-col items-center mx-auto max-w-[1380px] lg:flex-row'>
 				<Image
 					src={IMAGE}
@@ -26,7 +26,9 @@ const AboutMeSection = () => {
 							challenges and further development, ready to create inspiring and engaging experiences.
 						</p>
 					</div>
-					<Link href='/about' className='bg-hightlight rounded-lg  hover:bg-hightlightHover duration-300 py-3 px-5'>
+					<Link
+						href='/about'
+						className='bg-hightlightSecond rounded-lg  hover:bg-hightlightSecondHover duration-300 py-4 px-5'>
 						More about me
 					</Link>
 				</div>

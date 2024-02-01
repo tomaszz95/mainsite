@@ -7,8 +7,8 @@ import SocialLinks from '../UI/SocialLinks'
 const HeroSection = () => {
 	return (
 		<CenteredSection classes='max-w-[1380px] flex align-center justify-around'>
-			<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2'>
-				<h1 className='text-5xl mb-4'>
+			<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
+				<h1 className='text-5xl mb-5'>
 					Hi, I am <span className='text-hightlight'>Tomek</span>
 				</h1>
 
@@ -17,11 +17,11 @@ const HeroSection = () => {
 					artistry with technology in the digital realm.
 				</p>
 
-				<div className='flex items-center justify-between mt-8 xl:mt-14 text-center'>
+				<div className='flex flex-col sm:flex-row items-center justify-between mt-10 xl:mt-14 text-center'>
 					<a
 						href='/Tomasz Zuber CV.pdf'
 						download='Tomasz Zuber CV.pdf'
-						className='bg-hightlightSecond mr-10 py-3 px-5 rounded-lg hover:bg-hightlightSecondHover duration-300'>
+						className='bg-hightlightSecond py-3 px-5 mb-9 sm:mb-0 rounded-lg hover:bg-hightlightSecondHover duration-300'>
 						Download CV
 					</a>
 					<SocialLinks />
