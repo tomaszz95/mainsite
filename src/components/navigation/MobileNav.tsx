@@ -16,7 +16,7 @@ const MobileNav: React.FC<ComponentType> = ({ isNavOpen, setIsNavOpen }) => {
 			<div
 				className={`${
 					isNavOpen ? 'flex' : 'hidden'
-				} md:hidden flex-col fixed top-0 right-0 w-3/5 h-full z-50 bg-navigation`}>
+				} md:hidden flex-col fixed top-0 right-0 w-3/5 h-full z-50 bg-main`}>
 				<button
 					type='button'
 					aria-label='Click to close navigation'
@@ -38,7 +38,7 @@ const MobileNav: React.FC<ComponentType> = ({ isNavOpen, setIsNavOpen }) => {
 			</div>
 			{isNavOpen && (
 				<div
-					className='fixed top-0 left-0 w-full h-full bg-navigation opacity-75 z-40 md:hidden'
+					className='fixed top-0 left-0 w-full h-full bg-main opacity-75 z-40 md:hidden'
 					onClick={() => setIsNavOpen(false)}></div>
 			)}
 		</>
