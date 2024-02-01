@@ -5,6 +5,8 @@
 body {
 	width: 100%;
 	background-color: #101022;
+	background: rgb(16, 16, 34);
+	background: radial-gradient(circle, rgba(16, 16, 34, 1) 58%, rgba(26, 26, 53, 1) 92%);
 	color: #f5fbef;
 }
 
@@ -19,4 +21,9 @@ ul {
 button,
 a {
 	cursor: pointer;
+}
+
+.evenSection {
+	background: rgb(33, 36, 49);
+	background: radial-gradient(circle, rgba(33, 36, 49, 1) 55%, rgba(61, 60, 72, 1) 92%);
 }

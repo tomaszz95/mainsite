@@ -8,7 +8,7 @@ const HeroSection = () => {
 	return (
 		<CenteredSection classes='max-w-[1380px] flex align-center justify-around'>
 			<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
-				<h1 className='text-5xl mb-5'>
+				<h1 className='text-5xl mb-10'>
 					Hi, I am <span className='text-hightlight'>Tomek</span>
 				</h1>
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
 					<a
 						href='/Tomasz Zuber CV.pdf'
 						download='Tomasz Zuber CV.pdf'
-						className='bg-hightlightSecond py-3 px-5 mb-9 sm:mb-0 rounded-lg hover:bg-hightlightSecondHover duration-300'>
+						className='bg-hightlight py-3 px-5 mb-9 sm:mb-0 rounded-xl hover:bg-hightlightHover duration-300'>
 						Download CV
 					</a>
 					<SocialLinks />
