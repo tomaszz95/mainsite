@@ -6,7 +6,7 @@ import CenteredSection from '../layout/CenteredSection'
 
 const AboutMeSection = () => {
 	return (
-		<div className='bg-main w-full xl:py-10'>
+		<div className='w-full xl:py-10 evenSection'>
 			<CenteredSection classes='flex flex-col items-center mx-auto max-w-[1380px] lg:flex-row'>
 				<Image
 					src={IMAGE}
@@ -26,9 +26,7 @@ const AboutMeSection = () => {
 							challenges and further development, ready to create inspiring and engaging experiences.
 						</p>
 					</div>
-					<Link
-						href='/about'
-						className='bg-hightlightSecond rounded-lg  hover:bg-hightlightSecondHover duration-300 py-4 px-5'>
+					<Link href='/about' className='bg-hightlight rounded-xl  hover:bg-hightlightHover duration-300 py-4 px-5'>
 						More about me
 					</Link>
 				</div>
