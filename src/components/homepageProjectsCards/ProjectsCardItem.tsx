@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 type ComponentType = { title: string; description: string; tech: string[]; link: string }
 
-const CardItem: React.FC<ComponentType> = ({ title, description, tech, link }) => {
+const ProjectsCardItem: React.FC<ComponentType> = ({ title, description, tech, link }) => {
 	return (
 		<div className='flex flex-col justify-between border border-hightlight  even:scale-110 border-1 max-w-[340px] w-full text-center rounded-3xl bg-main p-6 hover:scale-[0.98] even:hover:scale-[1.08] duration-300'>
 			<div>
@@ -27,4 +27,4 @@ const CardItem: React.FC<ComponentType> = ({ title, description, tech, link }) =
 	)
 }
 
-export default CardItem
+export default ProjectsCardItem
