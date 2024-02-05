@@ -9,7 +9,7 @@ export const selectedProjects = [
 	{
 		title: 'Netflix clone',
 		description:
-			'Fully responsive website, which is an advanced clone of the popular streaming service Netflix, with many of its features. This is the most advanced project from my portfolio.',
+			'Fully responsive website, which is an advanced clone of the popular streaming service Netflix, with many of its features. This is the most advanced project in my portfolio.',
 		technologies: ['NextJS', 'Typescript', 'Firebase', 'MongoDB', 'Git/Github', 'SEO'],
 		link: 'https://netflixcloneen.vercel.app/',
 	},
