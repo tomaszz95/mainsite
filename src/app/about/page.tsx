@@ -1,6 +1,6 @@
 import PersonalInfoSection from '../../components/aboutMeViews/PersonalInfoSection'
 import ExperienceSection from '../../components/aboutMeViews/ExperienceSection'
-import AboutMeStack from '../../components/aboutMeStack/AboutMeStack'
+import AboutMeStackSection from '../../components/aboutMeViews/AboutMeStackSection'
 
 import type { Metadata } from 'next'
 
@@ -14,7 +14,7 @@ const AboutPage = () => {
 	return (
 		<>
 			<PersonalInfoSection />
-			<AboutMeStack />
+			<AboutMeStackSection />
 			<ExperienceSection />
 		</>
 	)
