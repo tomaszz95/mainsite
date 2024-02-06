@@ -3,7 +3,7 @@ import SocialLinks from '../UI/SocialLinks'
 const HomepageHeroText = () => {
 	return (
 		<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
-			<h1 className='text-5xl mb-10'>
+			<h1 className='text-4xl xl:text-5xl mb-10'>
 				Hi, I am <span className='text-hightlight'>Tomek</span>
 			</h1>
 

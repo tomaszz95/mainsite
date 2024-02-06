@@ -4,7 +4,7 @@ const HomepageAboutText = () => {
 	return (
 		<div className='p-2 max-w-lg lg:max-w-2xl'>
 			<div className='mb-12'>
-				<h2 className='text-4xl my-6'>
+				<h2 className='text-3xl xl:text-4xl my-6'>
 					Few words <span className='text-hightlight'>about me..</span>
 				</h2>
 				<p>
