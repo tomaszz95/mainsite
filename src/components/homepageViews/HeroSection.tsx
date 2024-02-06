@@ -8,8 +8,8 @@ import IMAGE from '../../assets/photos/programming1.jpg'
 
 const HeroSection = () => {
 	return (
-		<div className='w-full relative flex justify-center overflow-x-hidden'>
-			<CenteredSection classes='max-w-[1380px] flex align-center justify-around relative xl:mb-10'>
+		<div className='w-full relative flex justify-center overflow-hidden'>
+			<CenteredSection classes='max-w-[1380px] flex align-center justify-around relative xl:mb-10 '>
 				<HomepageHeroText />
 				<Image
 					src={IMAGE}

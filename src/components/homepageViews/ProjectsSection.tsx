@@ -4,10 +4,10 @@ import ProjectsCardContainer from '../homepageProjectsCards/ProjectsCardContaine
 
 const ProjectsSection = () => {
 	return (
-		<div className='w-full relative flex justify-center overflow-x-hidden'>
+		<div className='w-full relative flex justify-center overflow-hidden'>
 			<SectionBlock direction='right' />
 			<CenteredSection classes='flex flex-col items-center mx-auto max-w-[1380px] xl:py-10'>
-				<h2 className='text-4xl mb-3'>
+				<h2 className='text-3xl xl:text-4xl mb-3'>
 					Selected <span className='text-hightlight'>projects</span>
 				</h2>
 				<p className='mb-6 text-lg text-center'>
