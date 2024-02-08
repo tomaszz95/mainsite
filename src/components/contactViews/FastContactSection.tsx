@@ -8,10 +8,10 @@ import MOBILE_ICON from '../../assets/icons/mobileContact.png'
 
 const FastContactSection = () => {
 	const itemsClasses =
-		'flex flex-col justify-center items-center cursor-pointer border-2 p-4 m-5 w-full rounded-2xl hover:border-hightlight duration-300 gap-4 min-w-[220px] max-w-[300px]'
+		'flex flex-col justify-center items-center cursor-pointer border-2 p-4 m-5 w-full rounded-2xl hover:border-hightlight duration-300 gap-4 min-w-[220px] max-w-[300px] xl:text-lg'
 
 	return (
-		<div className='grid justify-items-center grid-cols-1 w-full'>
+		<div className='grid justify-items-center grid-cols-1 md:grid-cols-2 w-full max-w-[800px]'>
 			<Link
 				href='https://www.linkedin.com/in/tomasz-zuber95/'
 				target='_blank'
