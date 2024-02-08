@@ -1,5 +1,6 @@
 import FastContactSection from '../../components/contactViews/FastContactSection'
 import FormContactSection from '../../components/contactViews/FormContactSection'
+import SectionBlock from '../../components/UI/SectionBlock'
 
 import type { Metadata } from 'next'
 
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
 	return (
-		<>
+		<div className='w-full relative flex flex-col items-center'>
 			<h1 className='text-4xl xl:text-5xl my-6 p-4 text-center'>
 				Choose <span className='text-hightlight'>your</span> way to <span className='text-hightlight'>contact me</span>
 			</h1>
@@ -19,7 +20,8 @@ const ContactPage = () => {
 				Or send me <span className='text-hightlight'>a message</span>
 			</h2>
 			<FormContactSection />
-		</>
+			<SectionBlock direction='left' />
+		</div>
 	)
 }
 
