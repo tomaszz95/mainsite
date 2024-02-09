@@ -1,6 +1,6 @@
 import CenteredSection from '../layout/CenteredSection'
 import StackList from '../aboutMeStack/StackList'
-import { techStack, techToLearn } from '@/constans/aboutmeStack'
+import { techStack, techToLearn } from '../../constans/aboutmeStack'
 
 const AboutMeStackSection = () => {
 	return (
@@ -13,7 +13,7 @@ const AboutMeStackSection = () => {
 					<StackList stack={techStack} />
 				</div>
 				<div className='mt-12'>
-					<h2 className='text-3xl xl:text-4xl last:mb-8 lg:mb-2 text-center'>
+					<h2 className='text-3xl xl:text-4xl mb-10 text-center'>
 						Next to <span className='text-hightlight'>learn</span>
 					</h2>
 					<StackList stack={techToLearn} />
