@@ -56,7 +56,7 @@ export const projectsList = [
 	{
 		title: 'Netflix Clone',
 		shortDesc:
-			'A website that is a clone of Netflix – it is fully responsive, with SEO and accessibility practices and with many utilities taken from the original streaming site.',
+			'A website that is a clone of Netflix – it is fully responsive, with SEO and accessibility practices and with many utilities taken from the original streaming site',
 		description:
 			'The project is created in NextJS (13) using a small amount of React Redux, Firebase and written in Typescript. The page is fully responsive - for mobiles, tablets and desktops. The app is cloning the Netflix site - I used the TMDB database, which is not as detailed as the Netflix one, this means no videos, no detailed information about individual episodes of series or other detailed data. The application contains many sub-pages, starting from the main view, through the whole process of logging in and registering, selecting a profile and editing it (not all properties can be edited), up to the main page of series, movies and individual sub-pages. Due to the nature of the app I used different icons, used some dummy texts and this is not a pixel perfect clone - mainly due to a different api, which dictates a different placement of for example series and movie posters.',
 		technologies: [
@@ -77,7 +77,7 @@ export const projectsList = [
 	{
 		title: 'Portfolio Page',
 		shortDesc:
-			'A simple website briefly describing me, the projects I have created and how to contact me, as well as allowing people to download my CV.',
+			'A simple website briefly describing me, the projects I have created and how to contact me, as well as allowing people to download my CV',
 		description:
 			'The page you are currently on - my portfolio and introduction of my person. The site includes some information about me, the projects I have created and possible ways to contact me. It is not very complicated application, but clean, clear and fulfilling. The site is created in NextJs (14) using Typescript and Tailwind. It contains Homapage and three main subpages for about me, projects and contact. Additionally, you can read more information and see more photos about each project I created on a separate subpage.',
 		technologies: [
@@ -96,7 +96,7 @@ export const projectsList = [
 	},
 	{
 		title: 'Gradebook',
-		shortDesc: 'An application that partially mimics the operation of an electronic gradebook. ',
+		shortDesc: 'An application that partially mimics the operation of an electronic gradebook',
 		description:
 			'You can log in to app as a teacher or as a student. When you are logged as a student you can check your timetable, your grades, statistics in relation to your grades and other students/classes. As a teacher, you can also add news, add grades to individual students, also check statistics off whole school (only two classes are available). It combines frontend with backend and retrieving data from databases. ',
 		technologies: [
@@ -129,7 +129,7 @@ export const projectsList = [
 			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'toolkit',
-		photos: [TOOLKIT_PHOTO1, TOOLKIT_PHOTO2, TOOLKIT_PHOTO3],
+		photos: [TOOLKIT_PHOTO2, TOOLKIT_PHOTO2, TOOLKIT_PHOTO3],
 		github: 'https://github.com/tomaszz95/toolkit',
 		live: 'https://toolkiit.netlify.app/',
 	},
