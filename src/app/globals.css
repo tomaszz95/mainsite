@@ -32,6 +32,10 @@ a {
 	background: radial-gradient(circle, rgba(33, 36, 49, 1) 55%, rgba(61, 60, 72, 1) 92%);
 }
 
+.projectsList:nth-of-type(even) img {
+	order: 10;
+}
+
 .leftGradient {
 	background: rgb(33, 36, 49);
 	background: linear-gradient(to left, rgba(33, 36, 49, 1) 32%, rgba(61, 60, 72, 1) 80%);
@@ -40,6 +44,12 @@ a {
 .rightGradient {
 	background: rgb(33, 36, 49);
 	background: linear-gradient(to right, rgba(33, 36, 49, 1) 32%, rgba(61, 60, 72, 1) 80%);
+}
+
+@media (min-width: 1280px) {
+	.projectsList:nth-of-type(even) img {
+		order: -1;
+	}
 }
 
 @media (min-width: 1300px) {

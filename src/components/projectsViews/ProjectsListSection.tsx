@@ -1,14 +1,14 @@
 import { projectsList } from '../../constans/projects'
 import ProjectItem from '../projectItem/ProjectItem'
+import SectionBlock from '../UI/SectionBlock'
 
 const ProjectsListSection = () => {
 	return (
-		<ul className='w-full'>
+		<ul className='w-full relative pb-10'>
 			{projectsList.map(proj => (
-				<li className='w-full flex flex-col items-center projectsList'>
+				<li className='w-full flex flex-col items-center projectsList' key={proj.title}>
 					<ProjectItem
 						title={proj.title}
-						key={proj.title}
 						description={proj.shortDesc}
 						stack={proj.technologies}
 						link={proj.link}
@@ -16,6 +16,7 @@ const ProjectsListSection = () => {
 					/>
 				</li>
 			))}
+			<SectionBlock direction='left' />
 		</ul>
 	)
 }
