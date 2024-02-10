@@ -1,18 +1,23 @@
 import NETFLIX_PHOTO1 from '../assets/photos/netflix1.jpg'
 import NETFLIX_PHOTO2 from '../assets/photos/netflix2.jpg'
 import NETFLIX_PHOTO3 from '../assets/photos/netflix3.jpg'
+import NETFLIX_PHOTO4 from '../assets/photos/netflix4.jpg'
 import GEODESY_PHOTO1 from '../assets/photos/geodesy1.jpg'
 import GEODESY_PHOTO2 from '../assets/photos/geodesy2.jpg'
-import GEODESY_PHOTO3 from '../assets/photos/geodesy2.jpg'
+import GEODESY_PHOTO3 from '../assets/photos/geodesy3.jpg'
+import GEODESY_PHOTO4 from '../assets/photos/geodesy4.jpg'
 import GRADEBOOK_PHOTO1 from '../assets/photos/gradebook1.jpg'
 import GRADEBOOK_PHOTO2 from '../assets/photos/gradebook2.jpg'
 import GRADEBOOK_PHOTO3 from '../assets/photos/gradebook3.jpg'
+import GRADEBOOK_PHOTO4 from '../assets/photos/gradebook4.jpg'
 import PORTFOLIO_PHOTO1 from '../assets/photos/portfolio1.jpg'
 import PORTFOLIO_PHOTO2 from '../assets/photos/portfolio2.jpg'
 import PORTFOLIO_PHOTO3 from '../assets/photos/portfolio3.jpg'
+import PORTFOLIO_PHOTO4 from '../assets/photos/portfolio4.jpg'
 import TOOLKIT_PHOTO1 from '../assets/photos/toolkit1.jpg'
 import TOOLKIT_PHOTO2 from '../assets/photos/toolkit2.jpg'
 import TOOLKIT_PHOTO3 from '../assets/photos/toolkit3.jpg'
+import TOOLKIT_PHOTO4 from '../assets/photos/toolkit4.jpg'
 import NEXT_ICON from '../assets/icons/next.png'
 import REACT_ICON from '../assets/icons/react.png'
 import TAILWIN_ICON from '../assets/icons/tailwind.png'
@@ -70,7 +75,12 @@ export const projectsList = [
 			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'netflix-clone',
-		photos: [NETFLIX_PHOTO1, NETFLIX_PHOTO2, NETFLIX_PHOTO3],
+		photos: [
+			{ photo: NETFLIX_PHOTO1, alt: 'Homepage when user is not logged in of netflix clone site' },
+			{ photo: NETFLIX_PHOTO2, alt: 'Main site when user is logged in on==of netflix clone site' },
+			{ photo: NETFLIX_PHOTO3, alt: 'View of popular and trending series site of netflix clone site' },
+			{ photo: NETFLIX_PHOTO4, alt: 'View of edit user profile site of netflix clone site' },
+		],
 		github: 'https://github.com/tomaszz95/Netflixclone',
 		live: 'https://netflixcloneen.vercel.app/',
 	},
@@ -90,7 +100,12 @@ export const projectsList = [
 			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'my-portfolio',
-		photos: [PORTFOLIO_PHOTO1, PORTFOLIO_PHOTO2, PORTFOLIO_PHOTO3],
+		photos: [
+			{ photo: PORTFOLIO_PHOTO1, alt: 'Main site of my portfolio page' },
+			{ photo: PORTFOLIO_PHOTO2, alt: 'Contact site of portfolio page' },
+			{ photo: PORTFOLIO_PHOTO3, alt: 'Technologies that i have learned of my portfolio page' },
+			{ photo: PORTFOLIO_PHOTO4, alt: 'Projects site of my portfolio page' },
+		],
 		github: 'https://github.com/tomaszz95/mainsite',
 		live: '',
 	},
@@ -110,7 +125,12 @@ export const projectsList = [
 			{ name: 'SEO', icon: SEO_ICON },
 		],
 		link: 'gradebook',
-		photos: [GRADEBOOK_PHOTO1, GRADEBOOK_PHOTO2, GRADEBOOK_PHOTO3],
+		photos: [
+			{ photo: GRADEBOOK_PHOTO1, alt: 'Login site of gradebook site' },
+			{ photo: GRADEBOOK_PHOTO2, alt: 'News page when logged as a student of gradebook site' },
+			{ photo: GRADEBOOK_PHOTO3, alt: 'Add new grade when logged as a teacher of gradebook site' },
+			{ photo: GRADEBOOK_PHOTO4, alt: 'Statistics page when logged as a teacher of gradebook site' },
+		],
 		github: 'https://github.com/tomaszz95/gradebook',
 		live: 'https://gradebookk.vercel.app/',
 	},
@@ -129,7 +149,12 @@ export const projectsList = [
 			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'toolkit',
-		photos: [TOOLKIT_PHOTO2, TOOLKIT_PHOTO2, TOOLKIT_PHOTO3],
+		photos: [
+			{ photo: TOOLKIT_PHOTO1, alt: 'Task application of toolkit page' },
+			{ photo: TOOLKIT_PHOTO2, alt: 'Finances manager of toolkit page' },
+			{ photo: TOOLKIT_PHOTO3, alt: 'Weather app of toolkit page' },
+			{ photo: TOOLKIT_PHOTO4, alt: 'Note app of toolkit page' },
+		],
 		github: 'https://github.com/tomaszz95/toolkit',
 		live: 'https://toolkiit.netlify.app/',
 	},
@@ -148,7 +173,12 @@ export const projectsList = [
 			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'asgeodesy',
-		photos: [GEODESY_PHOTO1, GEODESY_PHOTO2, GEODESY_PHOTO3],
+		photos: [
+			{ photo: GEODESY_PHOTO1, alt: 'Homepage of surveying site' },
+			{ photo: GEODESY_PHOTO2, alt: 'Additional info about company of surveying site' },
+			{ photo: GEODESY_PHOTO3, alt: 'Services provided of surveying site' },
+			{ photo: GEODESY_PHOTO4, alt: 'Contact page of surveying site' },
+		],
 		github: 'https://github.com/tomaszz95/geodesy-site',
 		live: 'https://asgeodesy.netlify.app/',
 	},
