@@ -3,7 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import React, { useState } from 'react'
 import CenteredSection from '../layout/CenteredSection'
 import { createPortal } from 'react-dom'
-import PhotoModal from '../UI/PhotoModal'
+import PhotoModal from '../photoModal/PhotoModal'
 import SectionBlock from '../UI/SectionBlock'
 
 type ComponentType = {

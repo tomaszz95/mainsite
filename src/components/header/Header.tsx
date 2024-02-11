@@ -1,10 +1,10 @@
 'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 
-import MobileNav from '../navigation/MobileNav'
-import DesktopNav from '../navigation/DesktopNav'
+import MobileNav from './MobileNav'
+import DesktopNav from './DesktopNav'
 
 import BURGER from '../../assets/icons/burger.png'
 import LOGO from '../../assets/icons/logo.png'

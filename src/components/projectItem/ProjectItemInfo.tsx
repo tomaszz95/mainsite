@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import StackList from '../StackList/StackList'
+import StackList from '../stackList/StackList'
 
 type ComponentType = {
 	description: string

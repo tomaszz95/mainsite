@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image'
 import CenteredSection from '../layout/CenteredSection'
-import StackList from '../StackList/StackList'
+import StackList from '../stackList/StackList'
 
 type ComponentType = {
 	technologies: { name: string; icon: StaticImageData }[]

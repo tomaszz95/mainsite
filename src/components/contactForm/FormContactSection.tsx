@@ -1,4 +1,5 @@
 'use client'
+import { isEmailValidate, isEmpty } from '../../helpers/validateInputs'
 import { FormEvent, useState } from 'react'
 import Input from '../UI/Input'
 import TextArea from '../UI/TextArea'
@@ -16,7 +17,14 @@ const FormContactSection = () => {
 	const sendInputHandler = (event: FormEvent) => {
 		event.preventDefault()
 
-		console.log(inputsValue)
+		if (
+			!isEmpty(inputsValue.name) ||
+			isEmailValidate(inputsValue.email) ||
+			!isEmpty(inputsValue.subject) ||
+			!isEmpty(inputsValue.message)
+		) {
+			console.log(inputsValue)
+		}
 	}
 
 	return (
@@ -34,10 +42,10 @@ const FormContactSection = () => {
 				type='submit'
 				className='bg-hightlight hover:bg-hightlightHover rounded-3xl duration-300 py-4 px-6 my-10 w-56 disabled:bg-main font-bold'
 				disabled={
-					inputsValue.name === '' ||
-					inputsValue.email === '' ||
-					inputsValue.subject === '' ||
-					inputsValue.message === ''
+					isEmpty(inputsValue.name) ||
+					!isEmailValidate(inputsValue.email) ||
+					isEmpty(inputsValue.subject) ||
+					isEmpty(inputsValue.message)
 				}>
 				SEND MESSAGE
 			</button>

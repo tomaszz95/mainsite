@@ -1,4 +1,4 @@
-import NavLink from './Navlink'
+import NavLink from './NavLink'
 
 import { desktopNav } from '../../constans/navigationLinks'
 
