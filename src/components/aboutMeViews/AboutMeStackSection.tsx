@@ -1,31 +1,23 @@
+import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
 import StackList from '../stackList/StackList'
 import { techStack, techToLearn } from '../../constans/aboutmeStack'
+import HeadingTwo from '../UI/HeadingTwo'
 
 const AboutMeStackSection = () => {
 	return (
-		<div className='w-full evenSection flex justify-center'>
-			<CenteredSection classes='flex flex-col justify-center items-center max-w-[1200px]'>
+		<Wrapper classes='evenSection'>
+			<CenteredSection>
 				<div>
-					<h2 className='text-3xl xl:text-4xl mb-8 lg:mb-2 text-center'>
-						Technology <span className='text-hightlight'>stack</span>
-					</h2>
-					<StackList
-						stack={techStack}
-						classes='mt-4 lg:mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center text-center gap-6'
-					/>
+					<HeadingTwo text='Technology' coloredText='stack' />
+					<StackList stack={techStack} />
 				</div>
 				<div className='mt-12'>
-					<h2 className='text-3xl xl:text-4xl mb-10 text-center'>
-						Next to <span className='text-hightlight'>learn</span>
-					</h2>
-					<StackList
-						stack={techToLearn}
-						classes='mt-4 lg:mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center text-center gap-6'
-					/>
+					<HeadingTwo text='Next to' coloredText='learn' />
+					<StackList stack={techToLearn} />
 				</div>
 			</CenteredSection>
-		</div>
+		</Wrapper>
 	)
 }
 

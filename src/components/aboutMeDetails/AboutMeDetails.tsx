@@ -7,7 +7,7 @@ import IMAGE from '../../assets/photos/profilephoto.jpg'
 
 const AboutMeDetails = () => {
 	return (
-		<div className='flex flex-col lg:flex-row justify-center items-center w-full max-w-[1200px]'>
+		<div className='flex flex-col lg:flex-row justify-center items-center w-full'>
 			<Image
 				src={IMAGE}
 				alt='Programmer with dreadlocks profile photo'
