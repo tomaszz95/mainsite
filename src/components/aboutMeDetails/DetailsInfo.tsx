@@ -13,9 +13,9 @@ const DetailsInfo = () => {
 			</ul>
 			<SocialLinks />
 			<a
-				href='/Tomasz Zuber CV.pdf'
+				href='Tomasz Zuber CV.pdf'
 				download='Tomasz Zuber CV.pdf'
-				className='bg-hightlight py-3 px-5 mt-8 sm:mb-0 rounded-xl hover:bg-hightlightHover duration-300'>
+				className='bg-hightlight rounded-xl hover:bg-hightlightHover duration-300 py-3 px-10 lg:text-lg mt-10'>
 				Download CV
 			</a>
 		</div>

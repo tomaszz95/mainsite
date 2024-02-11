@@ -1,19 +1,19 @@
-import ExperienceList from '../aboutMeExperience/ExperienceList'
+import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
+import ExperienceList from '../aboutMeExperience/ExperienceList'
 import SectionBlock from '../UI/SectionBlock'
+import HeadingTwo from '../UI/HeadingTwo'
 
 const ExperienceSection = () => {
 	return (
-		<div className='w-full relative flex justify-center overflow-hidden'>
+		<Wrapper>
 			<SectionBlock direction='right' />
-			<CenteredSection classes='flex flex-col items-center mx-auto max-w-[1380px] xl:py-10'>
-				<h2 className='text-3xl xl:text-4xl mb-3 text-center'>
-					Experience and <span className='text-hightlight'>education</span>
-				</h2>
+			<CenteredSection>
+				<HeadingTwo text='Experience and' coloredText='education' />
 				<ExperienceList />
 			</CenteredSection>
 			<SectionBlock direction='left' />
-		</div>
+		</Wrapper>
 	)
 }
 

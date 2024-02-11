@@ -1,18 +1,18 @@
+import Wrapper from '../layout/Wrapper'
 import AboutMeDetails from '../aboutMeDetails/AboutMeDetails'
 import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'
+import HeadingOne from '../UI/HeadingOne'
 
 const PersonalInfoSection = () => {
 	return (
-		<div className='w-full relative flex justify-center overflow-hidden'>
-			<CenteredSection classes='max-w-[1380px] flex flex-col items-center justify-center xl:mb-10'>
-				<h1 className='text-4xl xl:text-5xl mb-8 text-center lg:mb-2'>
-					About <span className='text-hightlight'>Myself</span>
-				</h1>
+		<Wrapper>
+			<CenteredSection>
+				<HeadingOne text='About' coloredText='Myself' />
 				<AboutMeDetails />
 			</CenteredSection>
 			<SectionBlock direction='left' />
-		</div>
+		</Wrapper>
 	)
 }
 
