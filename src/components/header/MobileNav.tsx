@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import NavLink from './Navlink'
+import NavLink from './NavLink'
 import { mobileNav } from '../../constans/navigationLinks'
 
 import CLOSE from '../../assets/icons/close.png'
@@ -14,15 +14,13 @@ const MobileNav: React.FC<ComponentType> = ({ isNavOpen, setIsNavOpen }) => {
 	return (
 		<>
 			<div
-				className={`${
-					isNavOpen ? 'flex' : 'hidden'
-				} md:hidden flex-col fixed top-0 right-0 w-3/5 h-full z-50 bg-main`}>
+				className={`${isNavOpen ? 'flex' : 'hidden'} md:hidden flex-col fixed top-0 right-0 w-3/5 h-full z-50 bg-main`}>
 				<button
 					type='button'
 					aria-label='Click to close navigation'
 					onClick={() => setIsNavOpen(false)}
 					className='ml-auto z-50'>
-					<Image src={CLOSE} alt='Close navigation button' className='w-6 m-6 ' />
+					<Image src={CLOSE} alt='Close navigation button' className='w-6 m-6' />
 				</button>
 
 				<nav className='flex flex-col gap-12 pt-8 p-5 text-center text-xl w-full z-50'>

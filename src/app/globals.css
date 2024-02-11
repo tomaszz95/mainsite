@@ -9,7 +9,6 @@
 }
 
 body {
-	width: 100%;
 	background: rgb(16, 16, 34);
 	background: radial-gradient(circle, rgba(16, 16, 34, 1) 58%, rgba(26, 26, 53, 1) 92%);
 	color: #f5fbef;

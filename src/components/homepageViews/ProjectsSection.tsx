@@ -1,16 +1,16 @@
-import SectionBlock from '../UI/SectionBlock'
+import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
+import SectionBlock from '../UI/SectionBlock'
 import ProjectsCardContainer from '../homepageProjectsCards/ProjectsCardContainer'
+import HeadingTwo from '../UI/HeadingTwo'
 
 const ProjectsSection = () => {
 	return (
-		<div className='w-full relative flex justify-center overflow-hidden'>
+		<Wrapper>
 			<SectionBlock direction='right' />
-			<CenteredSection classes='flex flex-col items-center mx-auto max-w-[1380px] xl:py-10'>
-				<h2 className='text-3xl xl:text-4xl mb-3'>
-					Selected <span className='text-hightlight'>projects</span>
-				</h2>
-				<p className='mb-6 text-lg text-center'>
+			<CenteredSection>
+				<HeadingTwo text='Selected' coloredText='projects' />
+				<p className='mb-6 text-lg lg:text-xl text-center'>
 					If you want to know more about the projects{' '}
 					<a href='/projects' className='text-hightlight hover:underline'>
 						click here
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
 				<ProjectsCardContainer />
 			</CenteredSection>
 			<SectionBlock direction='left' />
-		</div>
+		</Wrapper>
 	)
 }
 

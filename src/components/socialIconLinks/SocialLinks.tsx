@@ -7,7 +7,7 @@ import FACEBOOK from '../../assets/icons/facebook.png'
 
 const SocialLinks = () => {
 	return (
-		<div className='flex items-center gap-8 '>
+		<div className='flex items-center gap-8'>
 			<Link href='https://github.com/tomaszz95' target='_blank' rel='noopener noreferrer'>
 				<Image src={GITHUB} alt='Tomasz Żuber github' className='w-10 lg:w-11 hover:scale-110 duration-300' priority />
 			</Link>

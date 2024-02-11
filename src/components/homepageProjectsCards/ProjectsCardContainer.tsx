@@ -4,7 +4,7 @@ import { selectedProjects } from '../../constans/projects'
 
 const ProjectsCardContainer = () => {
 	return (
-		<div className='flex flex-wrap gap-16 justify-around items-stretch w-full my-6 px-3 xl:py-8 xl:px-14'>
+		<div className='flex flex-wrap gap-16 justify-around items-stretch w-full my-6 px-3 xl:px-14'>
 			{selectedProjects.map(proj => (
 				<CardItem
 					key={proj.title}

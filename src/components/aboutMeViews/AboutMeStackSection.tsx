@@ -1,5 +1,5 @@
 import CenteredSection from '../layout/CenteredSection'
-import StackList from '../StackList/StackList'
+import StackList from '../stackList/StackList'
 import { techStack, techToLearn } from '../../constans/aboutmeStack'
 
 const AboutMeStackSection = () => {
