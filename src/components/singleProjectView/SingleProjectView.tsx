@@ -1,5 +1,6 @@
 import SingleProjectImages from '../singleProjectDetails/SingleProjectImages'
-import SectionBlock from '../UI/SectionBlock'
+import SingleProjectInfo from '../singleProjectDetails/SingleProjectInfo'
+import SingleProjectStack from '../singleProjectDetails/SingleProjectStack'
 
 type ComponentType = {
 	project: any
@@ -7,13 +8,18 @@ type ComponentType = {
 
 const SingleProjectView: React.FC<ComponentType> = ({ project }) => {
 	return (
-		<div className='w-full relative flex flex-col items-center'>
-			<h1 className='text-4xl xl:text-5xl my-8 text-center lg:mb-2'>
-				<span className='text-hightlight'>{project.title}</span>
-			</h1>
+		<>
+			<SingleProjectInfo
+				title={project.title}
+				description={project.description}
+				shortDesc={project.shortDesc}
+				contents={project.contents}
+				github={project.github}
+				live={project.live}
+			/>
+			<SingleProjectStack technologies={project.technologies} />
 			<SingleProjectImages photos={project.photos} />
-			<SectionBlock direction='left' />
-		</div>
+		</>
 	)
 }
 

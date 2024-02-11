@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	width: 100%;
 	background: rgb(16, 16, 34);
@@ -32,18 +38,27 @@ a {
 	background: radial-gradient(circle, rgba(33, 36, 49, 1) 55%, rgba(61, 60, 72, 1) 92%);
 }
 
+.projectsList:nth-of-type(even) .leftGradient,
+.projectsList:nth-of-type(even) .rightGradient {
+	display: none;
+}
+
 .projectsList:nth-of-type(even) .projectPhoto {
 	order: 10;
 }
 
+.projectsList:first-child .rightGradient {
+	display: none;
+}
+
 .leftGradient {
-	background: rgb(33, 36, 49);
-	background: linear-gradient(to left, rgba(33, 36, 49, 1) 32%, rgba(61, 60, 72, 1) 80%);
+	background: rgba(61, 60, 72, 1);
+	background: linear-gradient(to left, rgba(51, 50, 64, 1) 15%, rgba(61, 60, 72, 1) 70%);
 }
 
 .rightGradient {
 	background: rgb(33, 36, 49);
-	background: linear-gradient(to right, rgba(33, 36, 49, 1) 32%, rgba(61, 60, 72, 1) 80%);
+	background: linear-gradient(to right, rgba(51, 50, 64, 1) 15%, rgba(61, 60, 72, 1) 70%);
 }
 
 .projectsList ul li img {
@@ -51,7 +66,8 @@ a {
 	margin-bottom: 0;
 }
 
-.projectsList ul li span {
+.projectsList ul li span,
+.singleStack ul li span {
 	background-color: transparent;
 }
 
@@ -63,11 +79,11 @@ a {
 
 @media (min-width: 1300px) {
 	.leftGradient {
-		background: linear-gradient(to left, rgba(33, 36, 49, 1) 27%, rgba(61, 60, 72, 1) 80%);
+		background: linear-gradient(to left, rgba(47, 46, 58, 1) 15%, rgba(61, 60, 72, 1) 70%);
 	}
 
 	.rightGradient {
-		background: linear-gradient(to right, rgba(33, 36, 49, 1) 27%, rgba(61, 60, 72, 1) 80%);
+		background: linear-gradient(to right, rgba(47, 46, 58, 1) 23%, rgba(61, 60, 72, 1) 70%);
 	}
 }
 
