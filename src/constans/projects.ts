@@ -122,7 +122,7 @@ export const projectsList = [
 			{ photo: PORTFOLIO_PHOTO4, alt: 'Projects site of my portfolio page' },
 		],
 		github: 'https://github.com/tomaszz95/mainsite',
-		live: '',
+		live: 'https://tomaszzportfolio.vercel.app/',
 		contents: [
 			'main pages with some basic info about me',
 			'three sub pages - about, projects and contact. Also dynamic pages with more detail info about projects',
