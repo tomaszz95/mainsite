@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import LinkButton from '../UI/LinkButton'
 
 type ComponentType = { title: string; description: string; tech: string[]; link: string }
@@ -17,8 +16,8 @@ const ProjectsCardItem: React.FC<ComponentType> = ({ title, description, tech, l
 					</li>
 				))}
 			</ul>
-			<LinkButton href={link} openNewWindow={true} small={true}>
-				Check project site!
+			<LinkButton href={link} openNewWindow={false}>
+				Click for more info!
 			</LinkButton>
 		</div>
 	)

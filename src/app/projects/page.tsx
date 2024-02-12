@@ -9,9 +9,6 @@ export const metadata: Metadata = {
 const ProjectPage = () => {
 	return (
 		<>
-			<h1 className='text-4xl xl:text-5xl my-6 p-4 text-center'>
-				My <span className='text-hightlight'>projects</span>
-			</h1>
 			<ProjectsListSection />
 		</>
 	)

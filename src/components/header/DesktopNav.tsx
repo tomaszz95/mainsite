@@ -1,6 +1,6 @@
 import NavLink from './NavLink'
 
-import { desktopNav } from '../../constans/navigationLinks'
+import { navigation } from '../../constans/navigationLinks'
 
 type ComponentType = {
 	setIsNavOpen: (value: boolean) => void
@@ -9,7 +9,7 @@ type ComponentType = {
 const DesktopNav: React.FC<ComponentType> = ({ setIsNavOpen }) => {
 	return (
 		<nav className='hidden md:flex gap-6 lg:gap-7 xl:gap-8 text-lg lg:text-xl'>
-			{desktopNav.map(link => (
+			{navigation.map(link => (
 				<NavLink key={link.linkName} linkHref={link.linkHref} linkName={link.linkName} setIsNavOpen={setIsNavOpen} />
 			))}
 		</nav>

@@ -13,7 +13,7 @@ const HomepageHeroText = () => {
 				<a
 					href='Tomasz Zuber CV.pdf'
 					download='Tomasz Zuber CV.pdf'
-					className='bg-hightlight rounded-xl hover:bg-hightlightHover duration-300 py-3 px-10 lg:text-lg mb-10'>
+					className='bg-hightlight rounded-xl hover:bg-hightlightHover duration-300 py-3 px-10 lg:text-lg'>
 					Download CV
 				</a>
 				<SocialLinks />

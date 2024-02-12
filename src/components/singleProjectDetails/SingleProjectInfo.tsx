@@ -1,47 +1,34 @@
-import { projectsList } from '@/constans/projects'
 import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'
 import SingleProjectLinks from './SingleProjectLinks'
 
+import { SingleProjectType } from '../../types/singleProjectType'
+import Wrapper from '../layout/Wrapper'
+import HeadingOne from '../UI/HeadingOne'
+import HeadingTwo from '../UI/HeadingTwo'
+import SingleProjectImages from './SingleProjectImages'
+
 type ComponentType = {
-	title: string
-	shortDesc: string
-	description: string
-	contents: string[]
-	github: string
-	live: string
+	project: SingleProjectType
 }
 
-const SingleProjectInfo: React.FC<ComponentType> = ({ title, shortDesc, description, contents, github, live }) => {
+const SingleProjectInfo: React.FC<ComponentType> = ({ project }) => {
+	const { title, shortDesc, description, github, live, photos } = project
+
 	return (
-		<div className='w-full relative flex flex-col justify-center items-center overflow-hidden'>
-			<h1 className='text-4xl xl:text-5xl mt-8 text-center lg:mt-16'>
-				<span className='text-hightlight'>{title}</span>
-			</h1>
-			<CenteredSection classes='flex flex-col lg:flex-row gap-6 items-center lg:items-stretch lg:gap-x-16'>
-				<div className='flex flex-col items-center text-center lg:w-1/2'>
-					<h2 className='text-3xl xl:text-4xl my-6'>
-						About <span className='text-hightlight'>project</span>
-					</h2>
+		<Wrapper>
+			<HeadingOne text='' coloredText={title} />
+			<CenteredSection classes='lg:flex-row'>
+				<div className='flex flex-col items-center text-center lg:w-1/2 lg:mr-12 xl:mr-20 max-w-[600px]'>
+					<HeadingTwo text='About' coloredText='project' />
 					<p className='mb-4 lg:text-lg'>{shortDesc}</p>
-					<p className='mb-4 lg:text-lg'>{description}</p>
+					<p className='mb-12 lg:text-lg'>{description}</p>
+					<SingleProjectLinks github={github} live={live} />
 				</div>
-				<div className='flex flex-col items-center lg:w-1/2 px-4'>
-					<h2 className='text-3xl xl:text-4xl my-6'>
-						Project <span className='text-hightlight'>contains</span>
-					</h2>
-					<ol className='list-disc'>
-						{contents.map(item => (
-							<li key={item} className='lg:text-lg'>
-								{item}
-							</li>
-						))}
-					</ol>
-				</div>
+				<SingleProjectImages photos={[photos[0], photos[1]]} />
 			</CenteredSection>
-			<SingleProjectLinks github={github} live={live} />
 			<SectionBlock direction='left' />
-		</div>
+		</Wrapper>
 	)
 }
 

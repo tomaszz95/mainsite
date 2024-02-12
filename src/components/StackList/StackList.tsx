@@ -7,8 +7,7 @@ type ComponentType = {
 
 const StackList: React.FC<ComponentType> = ({ stack, classes }) => {
 	return (
-		<ul
-			className={`mt-4 lg:mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center text-center gap-6 ${classes}`}>
+		<ul className={`mt-3 lg:mt-6 grid grid-cols-2 md:grid-cols-3  items-center text-center gap-6 ${classes}`}>
 			{stack.map(item => (
 				<li key={item.name} className='flex flex-col items-center gap-2'>
 					<Image src={item.icon} alt={`${item.name} icon`} className='w-16 mb-2' />
