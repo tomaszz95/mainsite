@@ -1,11 +1,14 @@
 'use client'
-import { isEmailValidate, isEmpty } from '../../helpers/validateInputs'
 import { FormEvent, useState } from 'react'
+import { createPortal } from 'react-dom'
+import { isEmailValidate, isEmpty } from '../../helpers/validateInputs'
+import FormModal from '../formModal/FormModal'
 import Input from '../UI/Input'
 import TextArea from '../UI/TextArea'
 
 const FormContactSection = () => {
 	const [inputsValue, setInputsValue] = useState({ name: '', email: '', subject: '', message: '' })
+	const [modal, setModal] = useState({ isOpen: false, message: '' })
 
 	const inputHandler = (inputData: { property: string; value: string }) => {
 		setInputsValue(prevValue => {
@@ -24,18 +27,42 @@ const FormContactSection = () => {
 			!isEmpty(inputsValue.message)
 		) {
 			console.log(inputsValue)
+			setModal({ isOpen: true, message: 'Message successfully sent!\nI will reply to you as soon as possible.' })
 		}
+	}
+
+	const closeModalHandler = () => {
+		setModal({ isOpen: false, message: '' })
+		setInputsValue({ name: '', email: '', subject: '', message: '' })
 	}
 
 	return (
 		<form className='w-full max-w-[800px] flex flex-col items-center my-4 px-2' onSubmit={sendInputHandler}>
 			<div className='w-full flex flex-col items-center'>
 				<div className='w-full flex flex-col md:flex-row md:gap-6 items-center md:items-start'>
-					<Input name='name' type='text' placeholder='YOUR NAME' onInputHandler={inputHandler} />
-					<Input name='email' type='email' placeholder='YOUR EMAIL' onInputHandler={inputHandler} />
+					<Input
+						name='name'
+						type='text'
+						value={inputsValue.name}
+						placeholder='YOUR NAME'
+						onInputHandler={inputHandler}
+					/>
+					<Input
+						name='email'
+						type='email'
+						value={inputsValue.email}
+						placeholder='YOUR EMAIL'
+						onInputHandler={inputHandler}
+					/>
 				</div>
-				<Input name='subject' type='text' placeholder='YOUR SUBJECT' onInputHandler={inputHandler} />
-				<TextArea name='message' placeholder='YOUR MESSAGE' onInputHandler={inputHandler} />
+				<Input
+					name='subject'
+					type='text'
+					placeholder='YOUR SUBJECT'
+					value={inputsValue.subject}
+					onInputHandler={inputHandler}
+				/>
+				<TextArea name='message' placeholder='YOUR MESSAGE' onInputHandler={inputHandler} value={inputsValue.message} />
 			</div>
 			<button
 				aria-label='Send message to email'
@@ -49,6 +76,8 @@ const FormContactSection = () => {
 				}>
 				SEND MESSAGE
 			</button>
+			{modal.isOpen &&
+				createPortal(<FormModal message={modal.message} onCloseModal={closeModalHandler} />, document.body)}
 		</form>
 	)
 }
