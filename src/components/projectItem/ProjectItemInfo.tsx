@@ -1,4 +1,4 @@
-import StackList from '../stackList/StackList'
+import StackList from '../UI/StackList'
 
 import HeadingTwo from '../UI/HeadingTwo'
 import LinkButton from '../UI/LinkButton'

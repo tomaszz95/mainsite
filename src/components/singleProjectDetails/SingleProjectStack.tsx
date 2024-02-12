@@ -1,6 +1,6 @@
 import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
-import StackList from '../stackList/StackList'
+import StackList from '../UI/StackList'
 import HeadingTwo from '../UI/HeadingTwo'
 
 import { SingleProjectIconType } from '../../types/singleProjectType'
