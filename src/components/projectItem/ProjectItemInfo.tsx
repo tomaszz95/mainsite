@@ -1,27 +1,26 @@
-import Link from 'next/link'
 import StackList from '../stackList/StackList'
+
+import HeadingTwo from '../UI/HeadingTwo'
+import LinkButton from '../UI/LinkButton'
+
+import { SingleProjectIconType } from '../../types/singleProjectType'
 
 type ComponentType = {
 	description: string
-	stack: { name: string; icon: any }[]
+	stack: SingleProjectIconType[]
 	link: string
 	title: string
 }
 
 const ProjectItemInfo: React.FC<ComponentType> = ({ title, description, stack, link }) => {
 	return (
-		<div className='w-full xl:w-1/2 text-center md:pt-10 xl:px-16'>
-			<h2 className='text-3xl xl:text-4xl mb-4 text-hightlight'>{title}</h2>
+		<div className='w-full xl:w-1/2 text-center md:pb-8 xl:px-12'>
+			<HeadingTwo text='' coloredText={title} />
 			<p className='text-lg'>{description}</p>
-			<StackList
-				stack={stack}
-				classes='grid grid-cols-2 md:grid-cols-3 items-center my-6 md:mt-10 mb-12 gap-6 xl:grid-cols-4'
-			/>
-			<Link
-				href={`projects/${link}`}
-				className='bg-hightlight hover:bg-hightlightHover rounded-xl duration-300 py-3 px-10 xl:px-20 text-lg'>
+			<StackList stack={stack} classes='pt-8 mb-12 sm:grid-cols-3 md:grid-cols-4' />
+			<LinkButton href={`projects/${link}`} openNewWindow={false}>
 				More info
-			</Link>
+			</LinkButton>
 		</div>
 	)
 }

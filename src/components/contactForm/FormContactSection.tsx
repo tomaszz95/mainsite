@@ -28,7 +28,7 @@ const FormContactSection = () => {
 	}
 
 	return (
-		<form className='w-full max-w-[800px] flex flex-col items-center my-4 px-8' onSubmit={sendInputHandler}>
+		<form className='w-full max-w-[800px] flex flex-col items-center my-4 px-2' onSubmit={sendInputHandler}>
 			<div className='w-full flex flex-col items-center'>
 				<div className='w-full flex flex-col md:flex-row md:gap-6 items-center md:items-start'>
 					<Input name='name' type='text' placeholder='YOUR NAME' onInputHandler={inputHandler} />

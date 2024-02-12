@@ -5,13 +5,10 @@ type ComponentType = {
 	href: string
 	children: ReactNode
 	openNewWindow: boolean
-	small?: boolean
 }
 
-const LinkButton: React.FC<ComponentType> = ({ href, children, openNewWindow, small }) => {
-	const buttonClasses = `bg-hightlight rounded-xl hover:bg-hightlightHover duration-300 ${small ? 'py-3' : 'py-4'} ${
-		small ? 'px-6' : 'px-8'
-	} lg:text-lg`
+const LinkButton: React.FC<ComponentType> = ({ href, children, openNewWindow }) => {
+	const buttonClasses = `block mx-auto bg-hightlight rounded-xl hover:bg-hightlightHover duration-300 py-3 w-[180px] lg:w-[210px] xl:w-[240px] px-8 lg:text-lg text-center`
 
 	if (openNewWindow) {
 		return (

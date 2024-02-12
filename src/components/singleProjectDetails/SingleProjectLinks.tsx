@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import LinkButton from '../UI/LinkButton'
 
 type ComponentType = {
 	github: string
@@ -6,16 +6,14 @@ type ComponentType = {
 }
 
 const SingleProjectLinks: React.FC<ComponentType> = ({ github, live }) => {
-	const linksClasses =
-		'bg-hightlight py-3 w-[180px] md:w-[200px] lg:w-[230px] xl:w-[250px] rounded-xl hover:bg-hightlightHover duration-300 lg:text-lg'
 	return (
-		<div className='mb-20 flex flex-wrap items-center justify-center text-center gap-10'>
-			<Link href={github} target='_blank' rel='noopener noreferrer' className={linksClasses}>
+		<div className='mb-20 flex items-center justify-center flex-wrap text-center gap-10'>
+			<LinkButton href={github} openNewWindow={true}>
 				Github
-			</Link>
-			<Link href={live} target='_blank' rel='noopener noreferrer' className={linksClasses}>
+			</LinkButton>
+			<LinkButton href={live} openNewWindow={true}>
 				Live
-			</Link>
+			</LinkButton>
 		</div>
 	)
 }

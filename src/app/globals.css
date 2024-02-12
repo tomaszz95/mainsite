@@ -60,11 +60,6 @@ a {
 	background: linear-gradient(to right, rgba(51, 50, 64, 1) 15%, rgba(61, 60, 72, 1) 70%);
 }
 
-.projectsList ul li img {
-	width: 50px;
-	margin-bottom: 0;
-}
-
 .projectsList ul li span,
 .singleStack ul li span {
 	background-color: transparent;

@@ -3,7 +3,7 @@ import LinkButton from '../UI/LinkButton'
 
 const HomepageAboutText = () => {
 	return (
-		<div className='p-2 max-w-lg lg:max-w-2xl'>
+		<div className='p-2 max-w-lg lg:max-w-2xl flex flex-col'>
 			<div className='mb-16'>
 				<HeadingTwo text='Few words' coloredText='about me.' />
 				<p className='lg:text-lg'>

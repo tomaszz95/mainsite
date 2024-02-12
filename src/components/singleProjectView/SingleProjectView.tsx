@@ -1,4 +1,4 @@
-import SingleProjectImages from '../singleProjectDetails/SingleProjectImages'
+import SingleProjectContains from '../singleProjectDetails/SingleProjectContains'
 import SingleProjectInfo from '../singleProjectDetails/SingleProjectInfo'
 import SingleProjectStack from '../singleProjectDetails/SingleProjectStack'
 
@@ -9,16 +9,9 @@ type ComponentType = {
 const SingleProjectView: React.FC<ComponentType> = ({ project }) => {
 	return (
 		<>
-			<SingleProjectInfo
-				title={project.title}
-				description={project.description}
-				shortDesc={project.shortDesc}
-				contents={project.contents}
-				github={project.github}
-				live={project.live}
-			/>
+			<SingleProjectInfo project={project} />
 			<SingleProjectStack technologies={project.technologies} />
-			<SingleProjectImages photos={project.photos} />
+			<SingleProjectContains contents={project.contents} photos={[project.photos[2], project.photos[3]]} />
 		</>
 	)
 }

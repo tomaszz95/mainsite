@@ -39,21 +39,21 @@ export const selectedProjects = [
 		description:
 			"An application that partially mimics the operation of an electronic gradebook. It allows you to check your schedule, your grades, statistics, and from the teacher's side to add news or new grades to a student.",
 		technologies: ['NextJS', 'React', 'Typescript', 'Firebase', 'Git/Github', 'SEO'],
-		link: 'https://gradebookk.vercel.app/',
+		link: '/projects/gradebook',
 	},
 	{
 		title: 'Netflix clone',
 		description:
 			'Fully responsive website, which is an advanced clone of the popular streaming service Netflix, with many of its features. This is the most advanced project in my portfolio.',
 		technologies: ['NextJS', 'Typescript', 'Firebase', 'MongoDB', 'RWD', 'SEO'],
-		link: 'https://netflixcloneen.vercel.app/',
+		link: '/projects/netflix-clone',
 	},
 	{
 		title: 'Surveying website',
 		description:
 			'This is a fully functional and responsive website for a surveying company - incorporating good practices for SEO, accessibility, and cleanliness and quality of written code.',
 		technologies: ['HTML', 'CSS/SCSS', 'GULP', 'Git/Github', 'SEO', 'RWD'],
-		link: 'https://asgeodesy.netlify.app/',
+		link: '/projects/asgeodesy',
 	},
 ]
 
@@ -194,11 +194,11 @@ export const projectsList = [
 		live: 'https://toolkiit.netlify.app/',
 		contents: [
 			'five fully functional different sites with 5 different apps',
-			'Todo list - you can add task, mark as ended, delete and edit',
-			'Note app - you can add note, edit note, delete note',
-			'Finances manager - you can add transactions, delete and calculate how much money u spend / have',
-			'Simple calculator app, with most common error boundries secured',
-			'Weather App with detail info about weather in searched city',
+			'in todo list you can add task, mark as ended, delete and edit',
+			'in note app you can add note, edit note, delete note',
+			'in finances manager you can add transactions, delete and calculate how much money u spend / have',
+			'simple calculator app with most common error boundries secured',
+			'weather app with detail info about weather in searched city',
 			'responsive design',
 			'accessibility practices',
 			'light / dark themes',

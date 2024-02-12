@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import NavLink from './NavLink'
-import { mobileNav } from '../../constans/navigationLinks'
+import { navigation } from '../../constans/navigationLinks'
 
 import CLOSE from '../../assets/icons/close.png'
 
@@ -24,7 +24,7 @@ const MobileNav: React.FC<ComponentType> = ({ isNavOpen, setIsNavOpen }) => {
 				</button>
 
 				<nav className='flex flex-col gap-12 pt-8 p-5 text-center text-xl w-full z-50'>
-					{mobileNav.map(link => (
+					{navigation.map(link => (
 						<NavLink
 							key={link.linkName}
 							linkHref={link.linkHref}

@@ -1,27 +1,23 @@
 'use client'
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
+
 import CenteredSection from '../layout/CenteredSection'
 import PhotoModal from '../photoModal/PhotoModal'
 import ProjectItemInfo from './ProjectItemInfo'
 import SectionBlock from '../UI/SectionBlock'
 
-type ComponentType = {
-	title: string
-	description: string
-	stack: { name: string; icon: any }[]
-	link: string
-	photo: { photo: StaticImageData; alt: string }
-}
+import { ProjectItemType } from '../../types/singleProjectType'
+import Wrapper from '../layout/Wrapper'
 
-const ProjectItem: React.FC<ComponentType> = ({ title, description, stack, link, photo }) => {
+const ProjectItem: React.FC<ProjectItemType> = ({ title, description, stack, link, photo }) => {
 	const [isClicked, setIsClicked] = useState(false)
 
 	return (
-		<div className='w-full relative flex flex-col items-center overflow-hidden'>
+		<Wrapper>
 			<SectionBlock direction='right' />
-			<CenteredSection classes='flex flex-col xl:flex-row items-center odd:evenSection md:pb-16 md:pt-0'>
+			<CenteredSection classes='xl:flex-row odd:evenSection xl:max-w-[1700px]'>
 				<ProjectItemInfo description={description} stack={stack} link={link} title={title} />
 				<Image
 					src={photo.photo}
@@ -37,7 +33,7 @@ const ProjectItem: React.FC<ComponentType> = ({ title, description, stack, link,
 					)}
 			</CenteredSection>
 			<SectionBlock direction='left' />
-		</div>
+		</Wrapper>
 	)
 }
 
