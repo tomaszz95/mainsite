@@ -1,9 +1,10 @@
+import { SingleProjectType } from '../../types/singleProjectType'
 import SingleProjectContains from '../singleProjectDetails/SingleProjectContains'
 import SingleProjectInfo from '../singleProjectDetails/SingleProjectInfo'
 import SingleProjectStack from '../singleProjectDetails/SingleProjectStack'
 
 type ComponentType = {
-	project: any
+	project: SingleProjectType
 }
 
 const SingleProjectView: React.FC<ComponentType> = ({ project }) => {

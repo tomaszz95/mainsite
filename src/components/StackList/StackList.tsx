@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 type ComponentType = {
 	stack: { name: string; icon: any }[]
-	classes?: string
+	classes: string
 }
 
 const StackList: React.FC<ComponentType> = ({ stack, classes }) => {
