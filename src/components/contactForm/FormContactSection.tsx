@@ -1,15 +1,24 @@
 'use client'
+import axios from 'axios'
 import { FormEvent, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { isEmailValidate, isEmpty } from '../../helpers/validateInputs'
+
 import FormModal from '../formModal/FormModal'
 import Input from '../UI/Input'
 import TextArea from '../UI/TextArea'
 
+import { isEmailValidate, isEmpty } from '../../helpers/validateInputs'
+
+const FORMSPREE_URL = process.env.NEXT_PUBLIC_FORMSPREE_URL
+
 const FormContactSection = () => {
 	const [inputsValue, setInputsValue] = useState({ name: '', email: '', subject: '', message: '' })
-	const [modal, setModal] = useState({ isOpen: false, message: '' })
-
+	const [status, setStatus] = useState({
+		submitted: false,
+		submitting: false,
+		isModalOpen: false,
+		info: { error: false, msg: '' },
+	})
 	const inputHandler = (inputData: { property: string; value: string }) => {
 		setInputsValue(prevValue => {
 			const newValue = { ...prevValue, [inputData.property]: inputData.value }
@@ -17,27 +26,67 @@ const FormContactSection = () => {
 		})
 	}
 
-	const sendInputHandler = (event: FormEvent) => {
-		event.preventDefault()
+	const closeModalHandler = () => {
+		setStatus({
+			submitted: false,
+			submitting: false,
+			isModalOpen: false,
+			info: { error: false, msg: '' },
+		})
+	}
 
+	const handleServerResponse = (ok: boolean, msg: string) => {
+		if (ok) {
+			setStatus({
+				submitted: true,
+				submitting: false,
+				isModalOpen: true,
+				info: { error: false, msg: msg },
+			})
+
+			setInputsValue({ name: '', email: '', subject: '', message: '' })
+		} else {
+			setStatus({
+				submitted: false,
+				submitting: false,
+				isModalOpen: true,
+				info: { error: true, msg: msg },
+			})
+		}
+	}
+
+	const handleOnSubmit = (e: FormEvent) => {
+		e.preventDefault()
+
+		setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
 		if (
 			!isEmpty(inputsValue.name) ||
 			isEmailValidate(inputsValue.email) ||
 			!isEmpty(inputsValue.subject) ||
 			!isEmpty(inputsValue.message)
 		) {
-			console.log(inputsValue)
-			setModal({ isOpen: true, message: 'Message successfully sent!\nI will reply to you as soon as possible.' })
+			axios({
+				method: 'POST',
+				url: FORMSPREE_URL,
+				data: inputsValue,
+			})
+				.then(response => {
+					handleServerResponse(
+						true,
+						'Thank you, your message has been submitted.\nI will reply to you as soon as possible.'
+					)
+				})
+				.catch(error => {
+					console.log(error)
+					handleServerResponse(false, 'Something went wrong.\nPlease try again later.')
+				})
+		} else {
+			handleServerResponse(false, 'Please enter a valid form data!')
 		}
 	}
 
-	const closeModalHandler = () => {
-		setModal({ isOpen: false, message: '' })
-		setInputsValue({ name: '', email: '', subject: '', message: '' })
-	}
-
 	return (
-		<form className='w-full max-w-[800px] flex flex-col items-center my-4 px-2' onSubmit={sendInputHandler}>
+		<form className='w-full max-w-[800px] flex flex-col items-center my-4 px-2' onSubmit={handleOnSubmit}>
 			<div className='w-full flex flex-col items-center'>
 				<div className='w-full flex flex-col md:flex-row md:gap-6 items-center md:items-start'>
 					<Input
@@ -74,10 +123,10 @@ const FormContactSection = () => {
 					isEmpty(inputsValue.subject) ||
 					isEmpty(inputsValue.message)
 				}>
-				SEND MESSAGE
+				{!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
 			</button>
-			{modal.isOpen &&
-				createPortal(<FormModal message={modal.message} onCloseModal={closeModalHandler} />, document.body)}
+			{status.isModalOpen &&
+				createPortal(<FormModal message={status.info.msg} onCloseModal={closeModalHandler} />, document.body)}
 		</form>
 	)
 }
