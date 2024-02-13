@@ -17,8 +17,10 @@ const SingleProjectInfo: React.FC<ComponentType> = ({ project }) => {
 
 	return (
 		<Wrapper>
-			<HeadingOne text='' coloredText={title} />
-			<CenteredSection classes='lg:flex-row'>
+			<div className='mt-14 xl:mt-28'>
+				<HeadingOne text='' coloredText={title} />
+			</div>
+			<CenteredSection classes='lg:flex-row xl:pt-4'>
 				<div className='flex flex-col items-center text-center lg:w-1/2 lg:mr-12 xl:mr-20 max-w-[600px]'>
 					<HeadingTwo text='About' coloredText='project' />
 					<p className='mb-4 lg:text-lg'>{shortDesc}</p>
