@@ -9,8 +9,8 @@
 }
 
 body {
-	background: rgb(16, 16, 34);
-	background: radial-gradient(circle, rgba(16, 16, 34, 1) 58%, rgba(26, 26, 53, 1) 92%);
+	background: rgb(14, 14, 18);
+	background: linear-gradient(120deg, rgb(16, 16, 20) 44%, rgb(33, 34, 37) 55%);
 	color: #f5fbef;
 }
 
@@ -28,13 +28,13 @@ a {
 }
 
 .evenSection {
-	background: rgb(33, 36, 49);
-	background: radial-gradient(circle, rgba(33, 36, 49, 1) 55%, rgba(61, 60, 72, 1) 92%);
+	background: rgb(44, 44, 45);
+	background: linear-gradient(250deg, rgb(42, 44, 46) 34%, rgb(22, 22, 26) 63%);
 }
 
 .projectsList:nth-of-type(even) {
-	background: rgb(33, 36, 49);
-	background: radial-gradient(circle, rgba(33, 36, 49, 1) 55%, rgba(61, 60, 72, 1) 92%);
+	background: rgb(44, 44, 45);
+	background: linear-gradient(250deg, rgb(42, 44, 46) 32%, rgb(22, 22, 26) 67%);
 }
 
 .projectsList:nth-of-type(even) .leftGradient,
@@ -51,13 +51,11 @@ a {
 }
 
 .leftGradient {
-	background: rgba(61, 60, 72, 1);
-	background: linear-gradient(to left, rgba(51, 50, 64, 1) 15%, rgba(61, 60, 72, 1) 70%);
+	background: rgb(22, 22, 26);
 }
 
 .rightGradient {
-	background: rgb(33, 36, 49);
-	background: linear-gradient(to right, rgba(51, 50, 64, 1) 15%, rgba(61, 60, 72, 1) 70%);
+	background: rgb(42, 44, 46);
 }
 
 .projectsList ul li span,
@@ -72,25 +70,5 @@ a {
 @media (min-width: 1280px) {
 	.projectsList:nth-of-type(even) .projectPhoto {
 		order: -1;
-	}
-}
-
-@media (min-width: 1300px) {
-	.leftGradient {
-		background: linear-gradient(to left, rgba(47, 46, 58, 1) 15%, rgba(61, 60, 72, 1) 70%);
-	}
-
-	.rightGradient {
-		background: linear-gradient(to right, rgba(47, 46, 58, 1) 23%, rgba(61, 60, 72, 1) 70%);
-	}
-}
-
-@media (min-width: 1600px) {
-	.leftGradient {
-		background: linear-gradient(to left, rgba(33, 36, 49, 1) 22%, rgba(61, 60, 72, 1) 80%);
-	}
-
-	.rightGradient {
-		background: linear-gradient(to right, rgba(33, 36, 49, 1) 22%, rgba(61, 60, 72, 1) 80%);
 	}
 }
