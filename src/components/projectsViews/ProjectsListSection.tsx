@@ -4,7 +4,7 @@ import { projectsList } from '../../constans/projects'
 const ProjectsListSection = () => {
 	return (
 		<>
-			<ul className='w-full relative'>
+			<ul className='w-full relative mt-10 xl:mt-16'>
 				{projectsList.map(proj => (
 					<li className='w-full flex flex-col items-center projectsList' key={proj.title}>
 						<ProjectItem

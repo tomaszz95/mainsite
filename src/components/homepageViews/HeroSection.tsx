@@ -10,7 +10,7 @@ import IMAGE from '../../assets/photos/programming1.jpg'
 const HeroSection = () => {
 	return (
 		<Wrapper>
-			<CenteredSection classes='lg:justify-around lg:flex-row'>
+			<CenteredSection classes='lg:justify-around lg:flex-row mt-10 xl:mt-16'>
 				<HomepageHeroText />
 				<Image
 					src={IMAGE}

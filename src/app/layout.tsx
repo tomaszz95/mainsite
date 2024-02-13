@@ -18,7 +18,7 @@ type ComponentType = {
 const RootLayout: React.FC<ComponentType> = ({ children }) => {
 	return (
 		<html lang='en'>
-			<body className={`${roboto.className} flex flex-col justify-center items-center overflow-x-hidden`}>
+			<body className={`${roboto.className} flex flex-col justify-center items-center overflow-x-hidden min-h-screen`}>
 				<Header />
 				<main className='w-screen flex flex-col justify-center items-center'>{children}</main>
 				<Footer />

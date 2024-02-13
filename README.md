@@ -1,0 +1,34 @@
+<h1>Portfolio page</h1>
+
+<p>Hello, I present to you my portfolio page. The application is made in NextJs(14), written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version.</p>
+
+<p>I encourage you to check the website - uploaded to vercel <a href='https://tomaszzportfolio.vercel.app/'>Portfolio</a></p>
+
+<h2>📫 Project contains</h2>
+
+- main pages with some basic informations about me,
+- three sub-pages - about me, projects and contact,
+- dynamic pages contains single projects and data about them,
+- a fully functioning form where you can send me direct email if you want to contact me (uses a form provided by Vercel and Formspree),
+- also using Axios to send form to my email,
+- project is fully responsive,
+- accessibility practices,
+- SEO practices,
+- custom not found page,
+
+<h2>🛠 Used tools / programming languages / technologies</h2>
+
+- NextJS 14,
+- React,
+- Typescript,
+- Tailwind,
+- Axios / Vercel / Formspree,
+- Git / Github,
+- responsive / SEO
+
+<div align='center'>
+ <img src='./src/assets/photos/portfolio1.jpg'>
+ <img src='./src/assets/photos/portfolio2.jpg'>
+ <img src='./src/assets/photos/portfolio3.jpg'>
+ <img src='./src/assets/photos/portfolio4.jpg'>
+</div>

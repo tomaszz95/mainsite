@@ -65,6 +65,10 @@ a {
 	background-color: transparent;
 }
 
+.notFound {
+	height: calc(100vh - 110px);
+}
+
 @media (min-width: 1280px) {
 	.projectsList:nth-of-type(even) .projectPhoto {
 		order: -1;
