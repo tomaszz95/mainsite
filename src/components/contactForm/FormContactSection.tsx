@@ -70,7 +70,7 @@ const FormContactSection = () => {
 				url: FORMSPREE_URL,
 				data: inputsValue,
 			})
-				.then(response => {
+				.then(res => {
 					handleServerResponse(
 						true,
 						'Thank you, your message has been submitted.\nI will reply to you as soon as possible.'
