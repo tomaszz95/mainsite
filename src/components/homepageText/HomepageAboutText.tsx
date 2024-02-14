@@ -5,7 +5,7 @@ const HomepageAboutText = () => {
 	return (
 		<div className='p-2 max-w-lg lg:max-w-2xl flex flex-col'>
 			<div className='mb-16'>
-				<HeadingTwo text='Few words' coloredText='about me.' />
+				<HeadingTwo text='Few words' coloredText='about me' />
 				<p className='lg:text-lg'>
 					What started as a curiosity and a desire to learn new technologies, quickly turned into my passion and
 					greatest hobby. Through systematic study and practice, I have acquired the skills needed to create fascinating

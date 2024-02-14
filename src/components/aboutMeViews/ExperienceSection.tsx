@@ -6,7 +6,7 @@ import HeadingTwo from '../UI/HeadingTwo'
 
 const ExperienceSection = () => {
 	return (
-		<Wrapper>
+		<Wrapper classes='oddSection'>
 			<SectionBlock direction='right' />
 			<CenteredSection>
 				<HeadingTwo text='Experience and' coloredText='education' />

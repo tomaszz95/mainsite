@@ -13,7 +13,7 @@ type ComponentType = {
 
 const SingleProjectContains: React.FC<ComponentType> = ({ contents, photos }) => {
 	return (
-		<Wrapper>
+		<Wrapper classes='oddSection'>
 			<SectionBlock direction='right' />
 			<CenteredSection classes='lg:flex-row'>
 				<SingleProjectImages photos={photos} />

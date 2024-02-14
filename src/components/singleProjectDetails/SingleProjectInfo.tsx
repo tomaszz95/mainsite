@@ -16,7 +16,7 @@ const SingleProjectInfo: React.FC<ComponentType> = ({ project }) => {
 	const { title, shortDesc, description, github, live, photos } = project
 
 	return (
-		<Wrapper>
+		<Wrapper classes='oddSection'>
 			<div className='mt-14 xl:mt-28'>
 				<HeadingOne text='' coloredText={title} />
 			</div>
