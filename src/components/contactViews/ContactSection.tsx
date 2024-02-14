@@ -8,9 +8,9 @@ import HeadingTwo from '../UI/HeadingTwo'
 
 const ContactSection = () => {
 	return (
-		<Wrapper>
+		<Wrapper classes='oddSection'>
 			<CenteredSection classes='mt-10 xl:mt-16'>
-				<HeadingOne text='Choose your way' coloredText='to contact me' />
+				<HeadingOne text='Choose your way of' coloredText='contact' />
 				<FastContactSection />
 				<HeadingTwo text='Or send me' coloredText='a message' />
 				<FormContactSection />

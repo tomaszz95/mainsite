@@ -6,7 +6,7 @@ import HeadingOne from '../UI/HeadingOne'
 
 const PersonalInfoSection = () => {
 	return (
-		<Wrapper>
+		<Wrapper classes='oddSection'>
 			<CenteredSection classes='mt-10 xl:mt-16'>
 				<HeadingOne text='About' coloredText='Myself' />
 				<AboutMeDetails />

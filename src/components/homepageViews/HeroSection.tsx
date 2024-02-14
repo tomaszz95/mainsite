@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 
+import { motion } from 'framer-motion'
 import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'
@@ -9,14 +11,16 @@ import IMAGE from '../../assets/photos/programming1.jpg'
 
 const HeroSection = () => {
 	return (
-		<Wrapper>
+		<Wrapper classes='oddSection'>
 			<CenteredSection classes='lg:justify-around lg:flex-row mt-10 xl:mt-16'>
 				<HomepageHeroText />
-				<Image
-					src={IMAGE}
-					alt='Programmer with dreadlocks on his head sits in front of three monitors and writes'
-					className='hidden lg:inline-block w-1/2 max-w-[450px] saturate-50 ml-12'
-				/>
+				<motion.div
+					initial={{ opacity: 0.1 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 0.5 }}
+					className='hidden lg:inline-block w-1/2 max-w-[450px] saturate-50 ml-12'>
+					<Image src={IMAGE} alt='Programmer with dreadlocks on his head sits in front of three monitors and writes' />
+				</motion.div>
 			</CenteredSection>
 			<SectionBlock direction='left' />
 		</Wrapper>

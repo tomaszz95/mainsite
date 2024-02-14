@@ -121,7 +121,8 @@ const FormContactSection = () => {
 					isEmpty(inputsValue.name) ||
 					!isEmailValidate(inputsValue.email) ||
 					isEmpty(inputsValue.subject) ||
-					isEmpty(inputsValue.message)
+					isEmpty(inputsValue.message) ||
+					status.submitting
 				}>
 				{!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
 			</button>

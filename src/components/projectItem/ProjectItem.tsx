@@ -17,7 +17,7 @@ const ProjectItem: React.FC<ProjectItemType> = ({ title, description, stack, lin
 	return (
 		<Wrapper>
 			<SectionBlock direction='right' />
-			<CenteredSection classes='xl:flex-row odd:evenSection xl:max-w-[1700px]'>
+			<CenteredSection classes='xl:flex-row xl:max-w-[1700px]'>
 				<ProjectItemInfo description={description} stack={stack} link={link} title={title} />
 				<Image
 					src={photo.photo}
