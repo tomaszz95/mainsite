@@ -17,9 +17,13 @@ const HeroSection = () => {
 				<motion.div
 					initial={{ opacity: 0.1 }}
 					animate={{ opacity: 1 }}
-					transition={{ duration: 0.5 }}
+					transition={{ duration: 0.8 }}
 					className='hidden lg:inline-block w-1/2 max-w-[450px] saturate-50 ml-12'>
-					<Image src={IMAGE} alt='Programmer with dreadlocks on his head sits in front of three monitors and writes' />
+					<Image
+						src={IMAGE}
+						alt='Programmer with dreadlocks on his head sits in front of three monitors and writes'
+						priority
+					/>
 				</motion.div>
 			</CenteredSection>
 			<SectionBlock direction='left' />

@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 import Image, { StaticImageData } from 'next/image'
 
 type ComponentType = {
@@ -11,7 +13,9 @@ const PhotoModal: React.FC<ComponentType> = ({ photo, alt, onCloseHandler }) => 
 		<div
 			className='fixed top-0 w-screen h-full flex items-center justify-center cursor-zoom-out p-4'
 			onClick={onCloseHandler}>
-			<Image src={photo} alt={alt} className='z-30' />
+			<motion.div className='z-30' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+				<Image src={photo} alt={alt} />
+			</motion.div>
 			<div className='bg-primary opacity-90 w-full h-full absolute t-0 left-0 z-10' />
 		</div>
 	)
