@@ -19,6 +19,7 @@ const FormContactSection = () => {
 		isModalOpen: false,
 		info: { error: false, msg: '' },
 	})
+
 	const inputHandler = (inputData: { property: string; value: string }) => {
 		setInputsValue(prevValue => {
 			const newValue = { ...prevValue, [inputData.property]: inputData.value }

@@ -29,8 +29,8 @@ const HeadingOne: React.FC<ComponentType> = ({ text, coloredText }) => {
 					<motion.span
 						key={index}
 						style={{ display: 'inline-block' }}
-						animate={{ opacity: 1 }}
 						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
 						transition={{ delay: 0.07 * index }}>
 						{char === ' ' ? '\u00A0' : char}
 					</motion.span>
