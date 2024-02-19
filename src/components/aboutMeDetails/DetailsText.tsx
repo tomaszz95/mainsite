@@ -1,6 +1,6 @@
 const DetailsText = () => {
 	return (
-		<div className='my-4 max-w-[500px] lg:w-1/3 text-center lg:text-[17px] lg:mt-0'>
+		<div className='my-4 max-w-[500px] lg:col-start-2 lg:col-end-3 text-center lg:text-[17px] lg:mt-0'>
 			<p className='my-6'>
 				My adventure with programming began more than two years ago. I started by learning Html, Css and Javascript
 				decently, to then enter the world of React and one of its more popular frameworks NextJs. I am currently

@@ -1,8 +1,8 @@
 import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
 import StackList from '../UI/StackList'
-import { techStack, techToLearn } from '../../constans/aboutmeStack'
 import HeadingTwo from '../UI/HeadingTwo'
+import { techStack, techToLearn } from '../../constans/aboutmeStack'
 
 const AboutMeStackSection = () => {
 	return (

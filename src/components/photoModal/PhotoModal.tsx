@@ -1,6 +1,7 @@
+import Image, { StaticImageData } from 'next/image'
+
 import { motion } from 'framer-motion'
 
-import Image, { StaticImageData } from 'next/image'
 
 type ComponentType = {
 	photo: StaticImageData

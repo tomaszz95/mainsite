@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+
 import LinkButton from '../UI/LinkButton'
 
 type ComponentType = { title: string; description: string; tech: string[]; link: string }

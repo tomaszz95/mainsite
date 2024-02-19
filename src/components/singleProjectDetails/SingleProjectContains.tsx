@@ -1,10 +1,10 @@
 import Wrapper from '../layout/Wrapper'
-
-import { SingleProjectPhotoType } from '../../types/singleProjectType'
 import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'
 import HeadingTwo from '../UI/HeadingTwo'
 import SingleProjectImages from './SingleProjectImages'
+
+import { SingleProjectPhotoType } from '../../types/singleProjectType'
 
 type ComponentType = {
 	contents: string[]

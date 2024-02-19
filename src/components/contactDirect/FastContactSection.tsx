@@ -1,12 +1,13 @@
 'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+
 import { motion } from 'framer-motion'
 
 import LINKEDIN_ICON from '../../assets/icons/linkedinContact.png'
 import FACEBOOK_ICON from '../../assets/icons/facebookContact.png'
 import EMAIL_ICON from '../../assets/icons/emailContact.png'
-import MOBILE_ICON from '../../assets/icons/mobileContact.png'
 
 const FastContactSection = () => {
 	const itemsClasses =
@@ -14,7 +15,7 @@ const FastContactSection = () => {
 
 	return (
 		<motion.div
-			className='grid justify-items-center grid-cols-1 md:grid-cols-2 w-full max-w-[800px] mb-8'
+			className='grid justify-items-center grid-cols-1 md:grid-cols-4 md:grid-rows-2 xl:grid-cols-3 xl:grid-rows-1 w-full max-w-[800px] mb-8 xl:gap-x-8'
 			initial={{ opacity: 0, scale: 0.7 }}
 			animate={{
 				opacity: 1,
@@ -27,7 +28,7 @@ const FastContactSection = () => {
 				href='https://www.linkedin.com/in/tomasz-zuber95/'
 				target='_blank'
 				rel='noopener noreferrer'
-				className={itemsClasses}>
+				className={`${itemsClasses} md:col-start-1 md:col-end-3 md:row-span-1 xl:col-start-1 xl:col-end-2`}>
 				<Image src={LINKEDIN_ICON} alt='Linkedin icon' className='w-10 lg:w-11' priority />
 				<span>in/tomasz-zuber95</span>
 			</Link>
@@ -35,18 +36,18 @@ const FastContactSection = () => {
 				href='https://www.facebook.com/tomasz.zuber.315/'
 				target='_blank'
 				rel='noopener noreferrer'
-				className={itemsClasses}>
+				className={`${itemsClasses} md:col-start-3 md:col-end-5 md:row-span-1 xl:col-start-2 xl:col-end-3`}>
 				<Image src={FACEBOOK_ICON} alt='Facebook icon' className='w-10 lg:w-11' priority />
 				<span>tomasz.zuber.315</span>
 			</Link>
-			<a href='mailto:tzuber95@gmail.com' target='blank' rel='noopener noreferrer' className={itemsClasses}>
+			<a
+				href='mailto:tzuber95@gmail.com'
+				target='blank'
+				rel='noopener noreferrer'
+				className={`${itemsClasses} md:col-start-2 md:col-end-4 md:row-span-2 xl:col-start-3 xl:col-end-4`}>
 				<Image src={EMAIL_ICON} alt='Email icon' className='w-10 lg:w-11' priority />
 				<span>tzuber95@gmail.com</span>
 			</a>
-			<div className={itemsClasses}>
-				<Image src={MOBILE_ICON} alt='Mobile icon' className='w-10 lg:w-11' priority />
-				<span>+48 571 385 580</span>
-			</div>
 		</motion.div>
 	)
 }

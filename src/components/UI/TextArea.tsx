@@ -1,14 +1,9 @@
 import { useState } from 'react'
+
+import { TextAreaType } from '../../types/inputsType'
 import { capitalizeFirstLetter } from '../../helpers/capitalizeFirstLetter'
 
-type ComponentType = {
-	name: string
-	placeholder: string
-	onInputHandler: (inputData: { property: string; value: string }) => void
-	value: string
-}
-
-const TextArea: React.FC<ComponentType> = ({ name, placeholder, onInputHandler, value }) => {
+const TextArea: React.FC<TextAreaType> = ({ name, placeholder, onInputHandler, value }) => {
 	const [error, setError] = useState(false)
 	const textAreaName = capitalizeFirstLetter(name)
 

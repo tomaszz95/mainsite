@@ -1,5 +1,6 @@
-import ProjectsListSection from '../../components/projectsViews/ProjectsListSection'
 import type { Metadata } from 'next'
+
+import ProjectsListSection from '../../components/projectsViews/ProjectsListSection'
 
 export const metadata: Metadata = {
 	title: 'Tomasz Żuber | Projects',

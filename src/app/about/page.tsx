@@ -1,8 +1,8 @@
+import type { Metadata } from 'next'
+
 import PersonalInfoSection from '../../components/aboutMeViews/PersonalInfoSection'
 import ExperienceSection from '../../components/aboutMeViews/ExperienceSection'
 import AboutMeStackSection from '../../components/aboutMeViews/AboutMeStackSection'
-
-import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Tomasz Żuber | About me',

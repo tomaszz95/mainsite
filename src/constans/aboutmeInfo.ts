@@ -3,7 +3,8 @@ export const aboutMeInfo = [
 	{ property: 'Last Name', value: 'Żuber' },
 	{ property: 'Age', value: '28 years' },
 	{ property: 'Nationality', value: 'Poland' },
-	{ property: 'Phone', value: '+48 571 385 580' },
-	{ property: 'Email', value: 'tzuber95@gmail.com' },
 	{ property: 'Languages', value: 'Polish, English' },
+	{ property: 'Email', value: 'tzuber95@gmail.com' },
+	{ property: 'LinkedIn', value: 'in/tomasz-zuber95' },
+	{ property: 'Github', value: '/tomaszz95' },
 ]

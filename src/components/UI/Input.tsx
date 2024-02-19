@@ -1,16 +1,11 @@
 import { useState } from 'react'
+
+import { InputType } from '../../types/inputsType'
 import { capitalizeFirstLetter } from '../../helpers/capitalizeFirstLetter'
 
-type ComponentType = {
-	name: string
-	type: string
-	placeholder: string
-	onInputHandler: (inputData: { property: string; value: string }) => void
-	value: string
-}
-
-const Input: React.FC<ComponentType> = ({ name, type, placeholder, onInputHandler, value }) => {
+const Input: React.FC<InputType> = ({ name, type, placeholder, onInputHandler, value }) => {
 	const [error, setError] = useState(false)
+
 	const inputName = capitalizeFirstLetter(name)
 
 	const inputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

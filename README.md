@@ -11,6 +11,7 @@
 - dynamic pages contains single projects and data about them,
 - a fully functioning form where you can send me direct email if you want to contact me (uses a form provided by Vercel and Formspree),
 - also using Axios to send form to my email,
+- framer motion package used to animate site,
 - project is fully responsive,
 - accessibility practices,
 - SEO practices,
@@ -23,6 +24,7 @@
 - Typescript,
 - Tailwind,
 - Axios / Vercel / Formspree,
+- Framer Motion,
 - Git / Github,
 - responsive / SEO
 

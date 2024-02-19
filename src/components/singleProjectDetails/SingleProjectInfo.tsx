@@ -1,14 +1,16 @@
 'use client'
+
+import { motion } from 'framer-motion'
+
 import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'
 import SingleProjectLinks from './SingleProjectLinks'
-
-import { motion } from 'framer-motion'
-import { SingleProjectType } from '../../types/singleProjectType'
 import Wrapper from '../layout/Wrapper'
 import HeadingOne from '../UI/HeadingOne'
 import HeadingTwo from '../UI/HeadingTwo'
 import SingleProjectImages from './SingleProjectImages'
+
+import { SingleProjectType } from '../../types/singleProjectType'
 
 type ComponentType = {
 	project: SingleProjectType
