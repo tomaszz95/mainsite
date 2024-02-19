@@ -104,7 +104,7 @@ export const projectsList = [
 		shortDesc:
 			'A simple website briefly describing me, the projects I have created and how to contact me, as well as allowing people to download my CV',
 		description:
-			'The page you are currently on - my portfolio and introduction of my person. The site includes some information about me, the projects I have created and possible ways to contact me. It is not very complicated application, but clean, clear and fulfilling. The site is created in NextJs (14) using Typescript and Tailwind. It contains Homapage and three main subpages for about me, projects and contact. Additionally, you can read more information and see more photos about each project I created on a separate subpage.',
+			'The page you are currently on - my portfolio and introduction of my person. The site includes some information about me, the projects I have created and possible ways to contact me. It is not very complicated application, but clean, clear and fulfilling. The site is created in NextJs (14) using Typescript and Tailwind. Framer motion is a package used to animate site. It contains homapage and three main subpages: about me, projects and contact. Additionally, you can read more information and see more photos about each project I created on a separate subpage.',
 		technologies: [
 			{ name: 'NextJS', icon: NEXT_ICON },
 			{ name: 'React', icon: REACT_ICON },
@@ -126,7 +126,8 @@ export const projectsList = [
 		contents: [
 			'main pages with some basic info about me',
 			'three sub pages - about, projects and contact. Also dynamic pages with more detail info about projects',
-			'custom 404 and 500 page',
+			'framer motion package used to animate site',
+			'custom not found page',
 			'accessibility practices',
 			'SEO practices',
 			'project is fully responsive',

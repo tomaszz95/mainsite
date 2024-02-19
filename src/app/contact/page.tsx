@@ -1,5 +1,6 @@
-import ContactSection from '../../components/contactViews/ContactSection'
 import type { Metadata } from 'next'
+
+import ContactSection from '../../components/contactViews/ContactSection'
 
 export const metadata: Metadata = {
 	title: 'Tomasz Żuber | Contact',

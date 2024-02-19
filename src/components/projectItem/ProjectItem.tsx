@@ -6,10 +6,10 @@ import Image from 'next/image'
 import CenteredSection from '../layout/CenteredSection'
 import PhotoModal from '../photoModal/PhotoModal'
 import ProjectItemInfo from './ProjectItemInfo'
+import Wrapper from '../layout/Wrapper'
 import SectionBlock from '../UI/SectionBlock'
 
 import { ProjectItemType } from '../../types/singleProjectType'
-import Wrapper from '../layout/Wrapper'
 
 const ProjectItem: React.FC<ProjectItemType> = ({ title, description, stack, link, photo }) => {
 	const [isClicked, setIsClicked] = useState(false)

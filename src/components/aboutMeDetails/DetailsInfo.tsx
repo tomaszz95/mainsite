@@ -3,7 +3,7 @@ import SocialLinks from '../socialIconLinks/SocialLinks'
 
 const DetailsInfo = () => {
 	return (
-		<div className='w-full lg:ml-8 flex flex-col items-center text-center max-w-[500px] lg:w-1/3 xl:text-lg'>
+		<div className='w-full flex flex-col items-center text-center max-w-[500px] lg:col-start-3 lg:col-end-4 xl:text-lg'>
 			<ul className='w-full border-t-2 pt-4 pb-8 lg:border-none'>
 				{aboutMeInfo.map(item => (
 					<li key={item.value}>

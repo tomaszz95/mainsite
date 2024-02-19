@@ -1,5 +1,12 @@
+import type { Metadata } from 'next'
+
 import HeadingOne from '@/components/UI/HeadingOne'
 import LinkButton from '@/components/UI/LinkButton'
+
+export const metadata: Metadata = {
+	title: 'Tomasz Żuber | NotFound',
+	description: 'Not found page of portfolio Tomasz Żuber page.',
+}
 
 export default function NotFound() {
 	return (

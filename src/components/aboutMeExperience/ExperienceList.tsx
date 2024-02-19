@@ -1,10 +1,11 @@
 'use client'
-import Image from 'next/image'
 
 import { useState } from 'react'
-import { lifeCareer } from '../../constans/aboutmeEducation'
+import Image from 'next/image'
+
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { lifeCareer } from '../../constans/aboutmeEducation'
 
 import ARROW_ICON from '../../assets/icons/arrowDown.png'
 import SCHOOL_ICON from '../../assets/icons/school.png'

@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 
 import { motion } from 'framer-motion'
@@ -13,12 +14,12 @@ const AboutMeDetails = () => {
 			initial={{ opacity: 0.1 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.8 }}
-			className='flex flex-col lg:flex-row justify-center items-center w-full'>
+			className='w-full grid grid-col-1 place-items-center lg:grid-cols-3 lg:gap-8'>
 			<Image
 				src={IMAGE}
 				alt='Programmer with dreadlocks profile photo'
 				priority
-				className='w-full max-w-[400px] saturate-50 lg:mr-8 lg:w-1/3'
+				className='saturate-50 w-full max-w-[400px] lg:col-start-1 lg:col-end-2'
 			/>
 			<DetailsText />
 			<DetailsInfo />

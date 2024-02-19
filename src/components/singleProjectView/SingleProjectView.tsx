@@ -1,7 +1,8 @@
-import { SingleProjectType } from '../../types/singleProjectType'
 import SingleProjectContains from '../singleProjectDetails/SingleProjectContains'
 import SingleProjectInfo from '../singleProjectDetails/SingleProjectInfo'
 import SingleProjectStack from '../singleProjectDetails/SingleProjectStack'
+
+import { SingleProjectType } from '../../types/singleProjectType'
 
 type ComponentType = {
 	project: SingleProjectType
