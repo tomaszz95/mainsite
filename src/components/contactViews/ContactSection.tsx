@@ -10,7 +10,7 @@ const ContactSection = () => {
 	return (
 		<Wrapper classes='oddSection'>
 			<CenteredSection classes='mt-10 xl:mt-16'>
-				<HeadingOne text='Choose your way of' coloredText='contact' />
+				<HeadingOne text='Choose your preferred' coloredText='method of contact' />
 				<FastContactSection />
 				<HeadingTwo text='Or send me' coloredText='a message' />
 				<FormContactSection />

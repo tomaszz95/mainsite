@@ -6,7 +6,7 @@ const HomepageHeroText = () => {
 		<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
 			<HeadingOne text='Hi, I am' coloredText='Tomek' />
 			<p className='text-lg lg:text-xl'>
-				I am an aspiring Junior <span className='text-hightlight'>Frontend</span> Developer, on a quest to blend
+				I am an aspiring <span className='text-hightlight'>Junior Frontend Developer</span>, on a quest to blend
 				artistry with technology in the digital realm.
 			</p>
 			<div className='flex flex-col sm:flex-row items-center justify-between mt-10 xl:mt-14 text-center'>
