@@ -7,7 +7,7 @@ import AboutMeStackSection from '../../components/aboutMeViews/AboutMeStackSecti
 export const metadata: Metadata = {
 	title: 'Tomasz Żuber | About me',
 	description:
-		'A site that presents more information about Tomasz Zuber, what technologies he codes in, his experience and education.',
+		'A site that presents more information about Tomasz Żuber, what technologies he codes in, his experience and education.',
 }
 
 const AboutPage = () => {
