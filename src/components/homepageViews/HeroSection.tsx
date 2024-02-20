@@ -22,7 +22,7 @@ const HeroSection = () => {
 					className='hidden lg:inline-block w-1/2 max-w-[450px] saturate-50 ml-12'>
 					<Image
 						src={IMAGE}
-						alt='Programmer with dreadlocks on his head sits in front of three monitors and writes'
+						alt='Programmer with dreadlocks is sitting in front of three monitors and writing code'
 						priority
 					/>
 				</motion.div>

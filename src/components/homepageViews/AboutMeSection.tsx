@@ -20,7 +20,7 @@ const AboutMeSection = () => {
 					className='w-72 h-72 lg:w-80 lg:h-80 saturate-50 md:mx-12 xl:md:mx-20'>
 					<Image
 						src={IMAGE}
-						alt='Programmer with dreadlocks on his head sits in front of three monitors and writes code'
+						alt='Programmer with dreadlocks is sitting in front of three monitors and writing code'
 						className='rounded-full'
 					/>
 				</motion.div>
