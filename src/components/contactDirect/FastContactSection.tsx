@@ -30,7 +30,7 @@ const FastContactSection = () => {
 				rel='noopener noreferrer'
 				className={`${itemsClasses} md:col-start-1 md:col-end-3 md:row-span-1 xl:col-start-1 xl:col-end-2`}>
 				<Image src={LINKEDIN_ICON} alt='Linkedin icon' className='w-10 lg:w-11' priority />
-				<span>in/tomasz-zuber95</span>
+				in/tomasz-zuber95
 			</Link>
 			<Link
 				href='https://www.facebook.com/tomasz.zuber.315/'
@@ -38,7 +38,7 @@ const FastContactSection = () => {
 				rel='noopener noreferrer'
 				className={`${itemsClasses} md:col-start-3 md:col-end-5 md:row-span-1 xl:col-start-2 xl:col-end-3`}>
 				<Image src={FACEBOOK_ICON} alt='Facebook icon' className='w-10 lg:w-11' priority />
-				<span>tomasz.zuber.315</span>
+				tomasz.zuber.315
 			</Link>
 			<a
 				href='mailto:tzuber95@gmail.com'
@@ -46,7 +46,7 @@ const FastContactSection = () => {
 				rel='noopener noreferrer'
 				className={`${itemsClasses} md:col-start-2 md:col-end-4 md:row-span-2 xl:col-start-3 xl:col-end-4`}>
 				<Image src={EMAIL_ICON} alt='Email icon' className='w-10 lg:w-11' priority />
-				<span>tzuber95@gmail.com</span>
+				tzuber95@gmail.com
 			</a>
 		</motion.div>
 	)

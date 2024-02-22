@@ -47,14 +47,14 @@ const ExperienceList = () => {
 						<i className='block my-1 xl:text-lg'>{item.date}</i>
 						<p className='font-bold xl:text-lg'>{item.description}</p>
 						<Image
-							alt=''
+							alt={item.type === 'School' ? 'school icon' : 'work icon'}
 							src={item.type === 'School' ? SCHOOL_ICON : WORK_ICON}
 							className='absolute -top-6 right-2 w-12'
 						/>
 					</div>
 					{index !== lifeCareer.length - 1 && (
 						<motion.div animate={{ y: [0, -8, 0, 8, 0], transition: { duration: 3, repeat: Infinity } }}>
-							<Image src={ARROW_ICON} alt='' className='mx-auto my-5' />
+							<Image src={ARROW_ICON} alt='arrow icon' className='mx-auto my-5' />
 						</motion.div>
 					)}
 				</motion.li>
