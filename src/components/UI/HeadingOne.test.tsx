@@ -8,7 +8,9 @@ const coloredText = 'contact'
 describe('HeadingOne component', () => {
 	test('renders with correct text', () => {
 		render(<HeadingOne text={text} coloredText={coloredText} />)
+
 		const renderedText = screen.getByText(text)
+
 		expect(renderedText).toBeInTheDocument()
 	})
 })
