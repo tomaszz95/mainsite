@@ -21,6 +21,7 @@ describe('DetailsInfo component', () => {
 		render(<DetailsInfo />)
 
 		const downloadLink = screen.getByText('Download CV')
+		
 		expect(downloadLink).toBeInTheDocument()
 		expect(downloadLink).toHaveAttribute('href', 'Tomasz Zuber CV.pdf')
 		expect(downloadLink).toHaveAttribute('download', 'Tomasz Zuber CV.pdf')
