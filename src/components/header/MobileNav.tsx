@@ -14,6 +14,7 @@ const MobileNav: React.FC<ComponentType> = ({ isNavOpen, setIsNavOpen }) => {
 	return (
 		<>
 			<div
+				data-testid='mobile-nav'
 				className={`${isNavOpen ? 'flex' : 'hidden'} md:hidden flex-col fixed top-0 right-0 w-3/5 h-full z-50 bg-main`}>
 				<button
 					type='button'
@@ -34,10 +35,12 @@ const MobileNav: React.FC<ComponentType> = ({ isNavOpen, setIsNavOpen }) => {
 					))}
 				</nav>
 			</div>
+
 			{isNavOpen && (
 				<div
 					className='fixed top-0 left-0 w-full h-full bg-main opacity-75 z-40 md:hidden'
-					onClick={() => setIsNavOpen(false)}></div>
+					onClick={() => setIsNavOpen(false)}
+					data-testid='overlay-nav'></div>
 			)}
 		</>
 	)

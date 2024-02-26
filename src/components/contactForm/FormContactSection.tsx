@@ -80,7 +80,6 @@ const FormContactSection = () => {
 					)
 				})
 				.catch(error => {
-					console.log(error)
 					handleServerResponse(false, 'Something went wrong.\nPlease try again later.')
 				})
 		} else {
