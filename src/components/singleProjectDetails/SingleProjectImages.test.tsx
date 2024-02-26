@@ -8,11 +8,6 @@ const mockPhotos = [
 	{ photo: photo, alt: 'Mock Photo 3' },
 ]
 
-jest.mock('react-dom', () => ({
-	...jest.requireActual('react-dom'),
-	createPortal: (element: any) => element,
-}))
-
 describe('SingleProjectImages component', () => {
 	test('renders images correctly', () => {
 		render(<SingleProjectImages photos={mockPhotos} />)
