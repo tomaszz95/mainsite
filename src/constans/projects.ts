@@ -32,6 +32,8 @@ import GITHUB_ICON from '../assets/icons/github.png'
 import TYPESCRIPT_ICON from '../assets/icons/typescript.png'
 import GULP_ICON from '../assets/icons/gulp.png'
 import REDUX_ICON from '../assets/icons/redux.png'
+import RTL_ICON from '../assets/icons/ReactTL.png'
+import JEST_ICON from '../assets/icons/jest.png'
 
 export const selectedProjects = [
 	{
@@ -102,16 +104,17 @@ export const projectsList = [
 	{
 		title: 'Portfolio Page',
 		shortDesc:
-			'A simple website briefly introducing me, the projects I have created and providing methods to contact me, along with the option to download my CV.',
+			'A simple website briefly introducing me, the projects I have created and providing methods to contact me, along with the option to download my CV. Site is tested using JEST and RTL.',
 		description:
-			'The page you are currently on serves as my portfolio and personal introduction. The site includes information about me, my projects and ways to contact me. It is not an overly complicated application, but clean, clear and comprehensive. The site is created in NextJs (14) using Typescript and Tailwind. Framer motion is a package used to animate the site. It consists of a homepage and three main subpages: about me, projects and contact. Additionally, each project has a separate subpage where you can find more detailed information and photos.',
+			'The page you are currently on serves as my portfolio and personal introduction. The site includes information about me, my projects and ways to contact me. It is not an overly complicated application, but clean, clear and comprehensive. The site is created in NextJs (14) using Typescript and Tailwind. Framer motion is a package used to animate the site. It consists of a homepage and three main subpages: about me, projects and contact. Additionally, each project has a separate subpage where you can find more detailed information and photos. Site is tested using JEST and RTL - more than 100 unit tests are written for most components of varying complexity.',
 		technologies: [
 			{ name: 'NextJS', icon: NEXT_ICON },
 			{ name: 'React', icon: REACT_ICON },
 			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
 			{ name: 'Tailwind', icon: TAILWIN_ICON },
+			{ name: 'JEST', icon: JEST_ICON },
+			{ name: 'React Testing Library', icon: RTL_ICON },
 			{ name: 'Git/Github', icon: GITHUB_ICON },
-			{ name: 'SEO', icon: SEO_ICON },
 			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'my-portfolio',
@@ -127,6 +130,7 @@ export const projectsList = [
 			'main pages with basic info about me',
 			'three subpages – about, projects and contact, along with dynamic pages offering more detailed project information',
 			'framer motion package used to animate the site',
+			'site is tested using JEST and RTL - more than 100 unit tests are witten for most components',
 			'custom `not found` page',
 			'accessibility practices',
 			'SEO practices',
