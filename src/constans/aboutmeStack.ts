@@ -20,13 +20,16 @@ import PYTHON_ICON from '../assets/icons/python.png'
 import REDUX_ICON from '../assets/icons/redux.png'
 import SQL_ICON from '../assets/icons/sql.png'
 import VUE_ICON from '../assets/icons/vue.png'
+import RTL_ICON from '../assets/icons/ReactTL.png'
 
 export const techStack = [
 	{ name: 'React', icon: REACT_ICON },
-	{ name: 'React Redux', icon: REDUX_ICON },
 	{ name: 'NextJs', icon: NEXT_ICON },
 	{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+	{ name: 'JEST', icon: JEST_ICON },
+	{ name: 'React Testing Library', icon: RTL_ICON },
 	{ name: 'Tailwind', icon: TAILWIN_ICON },
+	{ name: 'React Redux', icon: REDUX_ICON },
 	{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 	{ name: 'MongoDB', icon: MONGO_ICON },
 	{ name: 'Firebase', icon: FIREBASE_ICON },
@@ -41,7 +44,6 @@ export const techStack = [
 ]
 
 export const techToLearn = [
-	{ name: 'Testing', icon: JEST_ICON },
 	{ name: 'NodeJs', icon: NODE_ICON },
 	{ name: 'VUE', icon: VUE_ICON },
 	{ name: 'PHP', icon: PHP_ICON },

@@ -7,7 +7,9 @@ interface ComponentType {
 
 const Wrapper: React.FC<ComponentType> = ({ children, classes }) => {
 	return (
-		<div className={`w-full relative flex flex-col items-center justify-center overflow-hidden ${classes}`}>
+		<div
+			data-testid='wrapper-div'
+			className={`w-full relative flex flex-col items-center justify-center overflow-hidden ${classes}`}>
 			{children}
 		</div>
 	)

@@ -10,11 +10,11 @@ const AboutMeStackSection = () => {
 			<CenteredSection>
 				<div>
 					<HeadingTwo text='Technology' coloredText='stack' />
-					<StackList stack={techStack} classes='lg:grid-cols-4 xl:grid-cols-6' />
+					<StackList stack={techStack} classes='lg:grid-cols-4 xl:grid-cols-6 xl:gap-x-0' />
 				</div>
 				<div className='mt-12'>
 					<HeadingTwo text='Next to' coloredText='learn' />
-					<StackList stack={techToLearn} classes='lg:grid-cols-4 xl:grid-cols-6' />
+					<StackList stack={techToLearn} classes='lg:grid-cols-5 gap-x-20' />
 				</div>
 			</CenteredSection>
 		</Wrapper>
