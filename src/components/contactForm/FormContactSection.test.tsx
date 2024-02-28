@@ -10,7 +10,7 @@ describe('FormContactSection component', () => {
 
 	test('updates input fields correctly', () => {
 		render(<FormContactSection />)
-		
+
 		const nameInput = screen.getByPlaceholderText('YOUR NAME') as HTMLInputElement
 		const emailInput = screen.getByPlaceholderText('YOUR EMAIL') as HTMLInputElement
 		const subjectInput = screen.getByPlaceholderText('YOUR SUBJECT') as HTMLInputElement

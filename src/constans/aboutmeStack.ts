@@ -45,8 +45,8 @@ export const techStack = [
 
 export const techToLearn = [
 	{ name: 'NodeJs', icon: NODE_ICON },
+	{ name: 'SQL', icon: SQL_ICON },
 	{ name: 'VUE', icon: VUE_ICON },
 	{ name: 'PHP', icon: PHP_ICON },
-	{ name: 'SQL', icon: SQL_ICON },
 	{ name: 'Python', icon: PYTHON_ICON },
 ]
