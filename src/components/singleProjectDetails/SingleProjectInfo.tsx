@@ -31,8 +31,8 @@ const SingleProjectInfo: React.FC<ComponentType> = ({ project }) => {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.8 }}>
 					<HeadingTwo text='About' coloredText='project' />
-					<p className='mb-4 lg:text-lg'>{shortDesc}</p>
-					<p className='mb-12 lg:text-lg'>{description}</p>
+					<p className='mb-4 lg:text-lg text-left'>{shortDesc}</p>
+					<p className='mb-12 lg:text-lg text-left'>{description}</p>
 					<SingleProjectLinks github={github} live={live} />
 				</motion.div>
 				<SingleProjectImages photos={[photos[0], photos[1]]} />

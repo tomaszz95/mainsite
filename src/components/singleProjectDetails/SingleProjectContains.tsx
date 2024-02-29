@@ -21,7 +21,7 @@ const SingleProjectContains: React.FC<ComponentType> = ({ contents, photos }) =>
 					<HeadingTwo text='Project' coloredText='contains' />
 					<ol>
 						{contents.map(item => (
-							<li key={item} className='lg:text-lg mb-2'>
+							<li key={item} className='lg:text-lg mb-2 text-left'>
 								- {item}
 							</li>
 						))}
