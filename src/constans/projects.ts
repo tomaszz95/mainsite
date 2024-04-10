@@ -18,6 +18,14 @@ import TOOLKIT_PHOTO1 from '../assets/photos/toolkit1.jpg'
 import TOOLKIT_PHOTO2 from '../assets/photos/toolkit2.jpg'
 import TOOLKIT_PHOTO3 from '../assets/photos/toolkit3.jpg'
 import TOOLKIT_PHOTO4 from '../assets/photos/toolkit4.jpg'
+import ANIMALS_PHOTO1 from '../assets/photos/animals1.jpg'
+import ANIMALS_PHOTO2 from '../assets/photos/animals2.jpg'
+import ANIMALS_PHOTO3 from '../assets/photos/animals3.jpg'
+import ANIMALS_PHOTO4 from '../assets/photos/animals4.jpg'
+import CHANCELLERY_PHOTO1 from '../assets/photos/chancellery1.jpg'
+import CHANCELLERY_PHOTO2 from '../assets/photos/chancellery2.jpg'
+import CHANCELLERY_PHOTO3 from '../assets/photos/chancellery3.jpg'
+import CHANCELLERY_PHOTO4 from '../assets/photos/chancellery4.jpg'
 import NEXT_ICON from '../assets/icons/next.png'
 import REACT_ICON from '../assets/icons/react.png'
 import TAILWIN_ICON from '../assets/icons/tailwind.png'
@@ -34,6 +42,7 @@ import GULP_ICON from '../assets/icons/gulp.png'
 import REDUX_ICON from '../assets/icons/redux.png'
 import RTL_ICON from '../assets/icons/ReactTL.png'
 import JEST_ICON from '../assets/icons/jest.png'
+import WORDPRESS_ICON from '../assets/icons/wordpress.png'
 
 export const selectedProjects = [
 	{
@@ -100,6 +109,22 @@ export const projectsList = [
 			'using LocalStorage to store certain  auth data (no data is collected in this demo)',
 			'the project is built with about 250 components (including custom hooks, API fetching, helpers)',
 		],
+	},
+	{
+		title: 'Wordpress Pages',
+		shortDesc:
+			'Two websites created using Wordpress - one is a typical company website for a law firm created in Polish, and the other is a small online shop for pet accessories.',
+		description: '',
+		technologies: [
+			{ name: 'Wordpress', icon: WORDPRESS_ICON },
+			{ name: 'RWD', icon: RWD_ICON },
+			{ name: 'SEO', icon: SEO_ICON },
+		],
+		link: 'wordpress',
+		photos: [{ photo: CHANCELLERY_PHOTO1, alt: 'Main site of my portfolio page' }],
+		github: '',
+		live: '',
+		contents: [''],
 	},
 	{
 		title: 'Portfolio Page',
