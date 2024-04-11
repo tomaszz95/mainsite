@@ -29,3 +29,11 @@ export type ProjectItemType = {
 	link: string
 	photo: SingleProjectPhotoType
 }
+
+export type WordpressProjectType = {
+	title: string
+	shortDesc: string
+	description: string
+	live: string
+	photos: SingleProjectPhotoType[]
+}
