@@ -1,19 +1,19 @@
-import SingleProjectContains from '../singleProjectDetails/SingleProjectContains'
-import SingleProjectInfo from '../singleProjectDetails/SingleProjectInfo'
+import SingleWordpressProject from '../singleProjectDetails/SingleWordpressProject'
 import SingleProjectStack from '../singleProjectDetails/SingleProjectStack'
 
-import { SingleProjectType } from '../../types/singleProjectType'
+import { WordpressProjectType } from '../../types/singleProjectType'
+import { wordpressTechnologies } from '../../constans/projects'
 
 type ComponentType = {
-	project: SingleProjectType
+	project: WordpressProjectType[]
 }
 
 const WordpressProjectsView: React.FC<ComponentType> = ({ project }) => {
 	return (
 		<>
-			<SingleProjectInfo project={project} />
-			<SingleProjectStack technologies={project.technologies} />
-			<SingleProjectContains contents={project.contents} photos={[project.photos[2], project.photos[3]]} />
+			<SingleWordpressProject project={project[0]} left={false} />
+			<SingleProjectStack technologies={wordpressTechnologies} />
+			<SingleWordpressProject project={project[1]} left={true} />
 		</>
 	)
 }

@@ -1,4 +1,5 @@
 import WordpressProjectsView from '../../../components/singleProjectView/WordpressProjectsView'
+import { wordpressProjects } from '../../../constans/projects'
 
 export async function generateMetadata() {
 	return {
@@ -8,8 +9,8 @@ export async function generateMetadata() {
 	}
 }
 
-const WordpressProjectsPage: React.FC<ComponentType> = () => {
-	return <WordpressProjectsView />
+const WordpressProjectsPage = () => {
+	return <WordpressProjectsView project={wordpressProjects} />
 }
 
 export default WordpressProjectsPage

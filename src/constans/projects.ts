@@ -113,7 +113,7 @@ export const projectsList = [
 	{
 		title: 'Wordpress Pages',
 		shortDesc:
-			'Two websites created using Wordpress - one is a typical company website for a law firm created in Polish, and the other is a small online shop for pet accessories.',
+			'Two websites created using Wordpress - one is a typical company website for a law firm created in Polish language, and the other is a small online shop for pet accessories.',
 		description: '',
 		technologies: [
 			{ name: 'Wordpress', icon: WORDPRESS_ICON },
@@ -266,4 +266,41 @@ export const projectsList = [
 			'preservation of basic design requirements',
 		],
 	},
+]
+
+export const wordpressProjects = [
+	{
+		title: 'PZB Law Company',
+		shortDesc:
+			'Website created using Wordpress and Gutenberg - in addition Astra was used as a theme. It is a fully functional and responsive web application that is a showcase for the law firm. Site is created in Polish language.',
+		description:
+			"The website consists of five sub-pages. The main page, where all the advantages and incentives to use the law firm's services are briefly described. Then there are the 'about us' and 'team' sub-pages where, as the name suggests, the firm's history is described, clients are listed and team members are introduced. This is followed by a listing of services and an indication of how the process with the client will be carried out, ending with a 'contact us' sub-page where you can use the form to write to the firm.",
+		photos: [
+			{ photo: CHANCELLERY_PHOTO1, alt: 'Main site of chancellery site' },
+			{ photo: CHANCELLERY_PHOTO2, alt: 'Main site of chancellery site1' },
+			{ photo: CHANCELLERY_PHOTO3, alt: 'Law team of chancellery site' },
+			{ photo: CHANCELLERY_PHOTO4, alt: 'What law team do in chancellery site' },
+		],
+		live: 'https://pzbkancelaria.pl/',
+	},
+	{
+		title: 'Animals Empire online shop',
+		shortDesc:
+			'Website created using Wordpress and Gutenberg - in addition Astra was used as a theme. It is a fully functional and responsive web application that is a showcase for the law firm. Site is created in Polish language.',
+		description:
+			'It is a fully functional online shop with many products, categories, shop rules, privacy policy. You can add products to the basket, remove them, select others, in addition, the whole purchasing process also works - right down to the email to the buyer. You can search for products, undo, select the size. Of course, the ability to send payment has been disabled, but this is only a demo version of the shop.',
+		photos: [
+			{ photo: ANIMALS_PHOTO1, alt: 'Main site of animals online shop site' },
+			{ photo: ANIMALS_PHOTO2, alt: 'Product to buy in animals online shop site' },
+			{ photo: ANIMALS_PHOTO3, alt: 'Card view in online shop site' },
+			{ photo: ANIMALS_PHOTO4, alt: 'Single product site of animals online shop site' },
+		],
+		live: 'https://animalempire.eu/',
+	},
+]
+
+export const wordpressTechnologies = [
+	{ name: 'Wordpress', icon: WORDPRESS_ICON },
+	{ name: 'RWD', icon: RWD_ICON },
+	{ name: 'SEO', icon: SEO_ICON },
 ]
