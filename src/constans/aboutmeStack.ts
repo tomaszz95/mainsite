@@ -17,20 +17,20 @@ import JEST_ICON from '../assets/icons/jest.png'
 import NODE_ICON from '../assets/icons/node.png'
 import PHP_ICON from '../assets/icons/php.png'
 import PYTHON_ICON from '../assets/icons/python.png'
-import REDUX_ICON from '../assets/icons/redux.png'
 import SQL_ICON from '../assets/icons/sql.png'
 import VUE_ICON from '../assets/icons/vue.png'
 import RTL_ICON from '../assets/icons/ReactTL.png'
+import WORDPRESS_ICON from '../assets/icons/wordpress.png'
 
 export const techStack = [
 	{ name: 'React', icon: REACT_ICON },
 	{ name: 'NextJs', icon: NEXT_ICON },
+	{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 	{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+	{ name: 'Wordpress', icon: WORDPRESS_ICON },
+	{ name: 'Tailwind', icon: TAILWIN_ICON },
 	{ name: 'JEST', icon: JEST_ICON },
 	{ name: 'React Testing Library', icon: RTL_ICON },
-	{ name: 'Tailwind', icon: TAILWIN_ICON },
-	{ name: 'React Redux', icon: REDUX_ICON },
-	{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 	{ name: 'MongoDB', icon: MONGO_ICON },
 	{ name: 'Firebase', icon: FIREBASE_ICON },
 	{ name: 'Bootstrap', icon: BOOTSTRAP_ICON },
