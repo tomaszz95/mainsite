@@ -3,6 +3,7 @@
 import Image from 'next/image'
 
 import { motion } from 'framer-motion'
+
 import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'

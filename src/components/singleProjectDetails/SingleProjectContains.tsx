@@ -18,11 +18,11 @@ const SingleProjectContains: React.FC<ComponentType> = ({ contents, photos }) =>
 			<CenteredSection classes='lg:flex-row'>
 				<SingleProjectImages photos={photos} />
 				<div className='flex flex-col items-center text-center lg:w-1/2 lg:ml-12 xl:ml-20 max-w-[600px]'>
-					<HeadingTwo text='Project' coloredText='contains' />
+					<HeadingTwo text='Key' coloredText='futures' />
 					<ol>
 						{contents.map(item => (
 							<li key={item} className='lg:text-lg mb-2 text-left'>
-								- {item}
+								&#8226; {item}
 							</li>
 						))}
 					</ol>

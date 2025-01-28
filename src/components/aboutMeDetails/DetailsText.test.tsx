@@ -6,9 +6,7 @@ describe('DetailsText component', () => {
 	test('renders component with correct text content', () => {
 		const { getByText } = render(<DetailsText />)
 
-		expect(getByText(/My programming journey began over two years ago./i)).toBeInTheDocument()
-		expect(
-			getByText(/I am disciplined, ambitious, and ready to continuously improve my programming skills./i)
-		).toBeInTheDocument()
+		expect(getByText(/My programming journey started over./i)).toBeInTheDocument()
+		expect(getByText(/I’m an aspiring Junior Frontend Developers./i)).toBeInTheDocument()
 	})
 })

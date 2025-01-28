@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react'
+
 import ProjectsCardContainer from './ProjectsCardContainer'
+
 import { selectedProjects } from '../../constans/projects'
 
 describe('ProjectsCardContainer component', () => {
