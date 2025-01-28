@@ -4,10 +4,11 @@ import SocialLinks from '../socialIconLinks/SocialLinks'
 const HomepageHeroText = () => {
 	return (
 		<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
-			<HeadingOne text='Hi, I am' coloredText='Tomek' />
+			<HeadingOne text='Hello, I am' coloredText='Tomek' />
 			<p className='text-lg lg:text-xl'>
-				I am an aspiring <span className='text-hightlight'>Junior Frontend Developer</span>, on a quest to blend
-				artistry with technology in the digital realm.
+				I am an aspiring <span className='text-hightlight'>Frontend Developer</span>, focused on building modern web
+				applications. I’m passionate about creating efficient solutions and constantly improving my skills with every
+				project.
 			</p>
 			<div className='flex flex-col sm:flex-row items-center justify-between mt-10 xl:mt-14 text-center'>
 				<a

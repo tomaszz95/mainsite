@@ -3,6 +3,7 @@
 import Image from 'next/image'
 
 import { motion } from 'framer-motion'
+
 import HomepageAboutText from '../homepageText/HomepageAboutText'
 import CenteredSection from '../layout/CenteredSection'
 import Wrapper from '../layout/Wrapper'

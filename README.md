@@ -1,6 +1,6 @@
 <h1>Portfolio page</h1>
 
-<p>Hello, I present to you my portfolio page. The application is made in NextJs(14), written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version. Also more than 100 unit tests of varying complexity have been written for the website using JEST and RTL to check the correct behaviour of most components.</p>
+<p>Hello, I present to you my portfolio page. The application is made in Next.js, written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version. Also more than 100 unit tests of varying complexity have been written for the website using JEST and RTL to check the correct behaviour of most components.</p>
 
 <p>I encourage you to check the website - uploaded to vercel <a href='https://tomaszzportfolio.vercel.app/'>Portfolio</a></p>
 
@@ -20,8 +20,8 @@
 
 <h2>🛠 Used tools / programming languages / technologies</h2>
 
-- NextJS 14,
 - React,
+- Next.js,
 - Typescript,
 - Tailwind,
 - JEST / React Testing Library

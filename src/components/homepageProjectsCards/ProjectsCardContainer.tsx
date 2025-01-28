@@ -2,7 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+
 import CardItem from './ProjectsCardItem'
+
 import { selectedProjects } from '../../constans/projects'
 
 const ProjectsCardContainer = () => {

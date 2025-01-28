@@ -14,7 +14,7 @@ const SingleProjectStack: React.FC<ComponentType> = ({ technologies }) => {
 		<Wrapper classes='evenSection'>
 			<CenteredSection>
 				<HeadingTwo text='Technology' coloredText='stack' />
-				<StackList stack={technologies} classes='md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6' />
+				<StackList stack={technologies} classes='md:grid-cols-3 lg:grid-cols-4 lg:gap-12' />
 			</CenteredSection>
 		</Wrapper>
 	)

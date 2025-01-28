@@ -7,10 +7,11 @@ const HomepageAboutText = () => {
 			<div className='mb-16'>
 				<HeadingTwo text='A few words' coloredText='about me' />
 				<p className='lg:text-lg'>
-					What began as mere curiosity and a desire to learn new technologies, quickly turned into my passion and
-					greatest hobby. Through systematic study and practice, I have acquired the skills needed to create fascinating
-					front-end projects, yet there is still much to explore. Now, with over two years of programming experience, I
-					am ready for new challenges and continual growth, and eager to create inspiring and engaging experiences.
+					I’ve been learning programming for over two years, starting my journey with frontend development and mastering
+					JavaScript, TypeScript, React, and Next.js. Over time, I’ve expanded into backend technologies like Node.js,
+					Express.js, and Mongoose, enabling me to create fully functional applications. I have experience building both
+					frontend interfaces and backend logic, integrating them with REST APIs and managing data with MongoDB. My goal
+					is to continue developing my skills as a full-stack developer and take on more complex projects.
 				</p>
 			</div>
 			<LinkButton href='/about' openNewWindow={false}>

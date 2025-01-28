@@ -2,30 +2,23 @@ import NETFLIX_PHOTO1 from '../assets/photos/netflix1.jpg'
 import NETFLIX_PHOTO2 from '../assets/photos/netflix2.jpg'
 import NETFLIX_PHOTO3 from '../assets/photos/netflix3.jpg'
 import NETFLIX_PHOTO4 from '../assets/photos/netflix4.jpg'
+import NEXTPC_PHOTO1 from '../assets/photos/nextpc1.jpg'
+import NEXTPC_PHOTO2 from '../assets/photos/nextpc2.jpg'
+import NEXTPC_PHOTO3 from '../assets/photos/nextpc3.jpg'
+import NEXTPC_PHOTO4 from '../assets/photos/nextpc4.jpg'
 import GEODESY_PHOTO1 from '../assets/photos/geodesy1.jpg'
 import GEODESY_PHOTO2 from '../assets/photos/geodesy2.jpg'
 import GEODESY_PHOTO3 from '../assets/photos/geodesy3.jpg'
 import GEODESY_PHOTO4 from '../assets/photos/geodesy4.jpg'
-import GRADEBOOK_PHOTO1 from '../assets/photos/gradebook1.jpg'
-import GRADEBOOK_PHOTO2 from '../assets/photos/gradebook2.jpg'
-import GRADEBOOK_PHOTO3 from '../assets/photos/gradebook3.jpg'
-import GRADEBOOK_PHOTO4 from '../assets/photos/gradebook4.jpg'
 import PORTFOLIO_PHOTO1 from '../assets/photos/portfolio1.jpg'
 import PORTFOLIO_PHOTO2 from '../assets/photos/portfolio2.jpg'
 import PORTFOLIO_PHOTO3 from '../assets/photos/portfolio3.jpg'
 import PORTFOLIO_PHOTO4 from '../assets/photos/portfolio4.jpg'
-import TOOLKIT_PHOTO1 from '../assets/photos/toolkit1.jpg'
-import TOOLKIT_PHOTO2 from '../assets/photos/toolkit2.jpg'
-import TOOLKIT_PHOTO3 from '../assets/photos/toolkit3.jpg'
-import TOOLKIT_PHOTO4 from '../assets/photos/toolkit4.jpg'
-import ANIMALS_PHOTO1 from '../assets/photos/animals1.jpg'
-import ANIMALS_PHOTO2 from '../assets/photos/animals2.jpg'
-import ANIMALS_PHOTO3 from '../assets/photos/animals3.jpg'
-import ANIMALS_PHOTO4 from '../assets/photos/animals4.jpg'
-import CHANCELLERY_PHOTO1 from '../assets/photos/chancellery1.jpg'
-import CHANCELLERY_PHOTO2 from '../assets/photos/chancellery2.jpg'
-import CHANCELLERY_PHOTO3 from '../assets/photos/chancellery3.jpg'
-import CHANCELLERY_PHOTO4 from '../assets/photos/chancellery4.jpg'
+import LAWCOMPANY_PHOTO1 from '../assets/photos/lawcompany1.jpg'
+import LAWCOMPANY_PHOTO2 from '../assets/photos/lawcompany2.jpg'
+import LAWCOMPANY_PHOTO3 from '../assets/photos/lawcompany3.jpg'
+import LAWCOMPANY_PHOTO4 from '../assets/photos/lawcompany4.jpg'
+
 import NEXT_ICON from '../assets/icons/next.png'
 import REACT_ICON from '../assets/icons/react.png'
 import TAILWIN_ICON from '../assets/icons/tailwind.png'
@@ -34,56 +27,94 @@ import MONGO_ICON from '../assets/icons/mongo.png'
 import FIREBASE_ICON from '../assets/icons/firebase.png'
 import HTML_ICON from '../assets/icons/html.png'
 import CSS_ICON from '../assets/icons/css.png'
-import SEO_ICON from '../assets/icons/seo.png'
-import RWD_ICON from '../assets/icons/rwd.png'
 import GITHUB_ICON from '../assets/icons/github.png'
 import TYPESCRIPT_ICON from '../assets/icons/typescript.png'
-import GULP_ICON from '../assets/icons/gulp.png'
-import REDUX_ICON from '../assets/icons/redux.png'
 import RTL_ICON from '../assets/icons/ReactTL.png'
 import JEST_ICON from '../assets/icons/jest.png'
-import WORDPRESS_ICON from '../assets/icons/wordpress.png'
+import EXPRESS_ICON from '../assets/icons/express.png'
+import MONGOOSE_ICON from '../assets/icons/mongoose.png'
+import NODE_ICON from '../assets/icons/node.png'
 
 export const selectedProjects = [
 	{
-		title: 'Gradebook',
-		description:
-			"An application resembling an electronic gradebook. It enables you to check your schedule, grades, statistics, and from the teacher's side to add news or grades for students",
-		technologies: ['NextJS', 'React', 'Typescript', 'Firebase', 'Git/Github', 'SEO'],
-		link: '/projects/gradebook',
-	},
-	{
 		title: 'Netflix clone',
 		description:
-			'A fully responsive website, which is an advanced clone of the popular streaming service Netflix, with many of its features. This is the most advanced project in my portfolio',
-		technologies: ['NextJS', 'Typescript', 'Firebase', 'MongoDB', 'RWD', 'SEO'],
+			'Is a web application designed to replicate key features of Netflix. Built using Next.js, React and TypeScript, the project showcases a responsive and functional design, offering users an engaging streaming experience.',
+		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Firebase', 'MongoDB'],
 		link: '/projects/netflix-clone',
 	},
 	{
-		title: 'Surveying website',
+		title: 'E-commerce Website',
 		description:
-			'This is a fully functional and responsive website for a surveying company – integrating best practices for SEO, accessibility, and code quality',
-		technologies: ['HTML', 'CSS/SCSS', 'GULP', 'Git/Github', 'SEO', 'RWD'],
-		link: '/projects/asgeodesy',
+			'NeXtPC is a fully functional online store page, simulates an e-commerce store where users can browse products, add them to their shopping cart, and proceed with checkout. The project includes both the frontend layer and the complete backend, along with seamless integration for database communication.',
+		technologies: ['React', 'Next.js', 'Typescript', 'Node.js', 'Express.js', 'Mongoose'],
+		link: '/projects/nextpc',
+	},
+	{
+		title: 'Law Company Page',
+		description:
+			'A company website designed for a fictional law firm. Written in English, it provides detailed information about the company’s team, services, and contact options in a professional layout.',
+		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Git/Github', 'HTML/CSS'],
+		link: '/projects/pzblawcompany',
 	},
 ]
 
 export const projectsList = [
 	{
+		title: 'NeXtPC E-commerce',
+		shortDesc:
+			'NeXtPC is a dynamic online store with product browsing, cart management, and secure checkout, built using modern web technologies like Next.js, React, and MongoDB.',
+		description:
+			'I would like to present with the greatest pleasure my most advanced project, which is a fully functional ecommerce website selling electronic items. I created the entire project from scratch: the frontend was written in Next.js (also Typescript), the backend in Node.js using Express.js and Mongoose, and I used a MongoDB database (REST API). The application contains many pages - starting with the home page through individual product categories, sub-pages with individual products, where you can rate the products, the ability to log in/register, and the entire process of buying a product up to payment (which, of course, since this is not a full-fledged application, ends when you have to pay for the product). Being logged in allows you to add products to your favorites, save your data and track products later.',
+		technologies: [
+			{ name: 'Next.js', icon: NEXT_ICON },
+			{ name: 'React', icon: REACT_ICON },
+			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
+			{ name: 'Node.js', icon: NODE_ICON },
+			{ name: 'Express.js', icon: EXPRESS_ICON },
+			{ name: 'Mongoose', icon: MONGOOSE_ICON },
+			{ name: 'MongoDB', icon: MONGO_ICON },
+		],
+		link: 'nextpc',
+		photos: [
+			{ photo: NEXTPC_PHOTO1, alt: 'Homepage when the user is not logged in on the nextpc shop app' },
+			{ photo: NEXTPC_PHOTO2, alt: 'Shop site in laptops category on the nextpc shop app' },
+			{ photo: NEXTPC_PHOTO3, alt: 'View of the single product in nextpc shop app' },
+			{ photo: NEXTPC_PHOTO4, alt: 'View of the cart in nextpc shop app' },
+		],
+		github: 'https://github.com/tomaszz95/ecommerce',
+		live: 'https://nextpc.vercel.app/',
+		contents: [
+			'homepage, shop page, category page, product page and many, many more',
+			'self-written backend to handle CRUD operations of order, login, cart, favorite products, comments',
+			'REST API connection with MongoDB to collect and store data',
+			'supports the login/registration process and subsequent editing of user data',
+			'full support for adding the product to the cart, handling the order, collecting data',
+			'possibility to search for products by name',
+			'security on the frontend as well as the backend so that the user cannot enter incorrect data',
+			'fully responsive design',
+			'accessibility-friendly practices',
+			'SEO-optimized structure',
+
+			'custom 404 and 500 page',
+		],
+	},
+	{
 		title: 'Netflix Clone',
 		shortDesc:
 			'A website that is a clone of Netflix – it is fully responsive, with SEO and accessibility practices and with many features from the original streaming site.',
 		description:
-			'The project is created in NextJS (13) using a small amount of React Redux, Firebase and written in Typescript. The page is fully responsive – for mobiles, tablets and desktops. The app is cloning the Netflix site – I used the TMDB database, which is not as detailed as the Netflix one. Therefore, detailed data such as videos and individual episode information is unavailable. The application contains various sub-pages, including the main view, login and registration processes, selecting a profile and editing it (not all properties can be edited), series and movies main pages and individual sub-pages. Due to the nature of the app, I used different icons, some dummy texts and it is not a pixel-perfect clone – mainly because of the different API, which dictates a different placement of for example series and movie posters.',
+			"I present to you my Netflix clone project. The project is created in Next.js using a small amount of React Redux, Firebase and written in Typescript. The page is fully responsive - for mobiles, tablets and desktops. The app is 'cloning' the Netflix site - I used the TMDB database, which is not as detailed as the Netflix one, this means no videos, no detailed information about individual episodes of series or other detailed data. The application contains many sub-pages, starting from the main view, through the whole process of logging in and registering, selecting a profile and editing it, up to the main page of series, movies and individual sub-pages. Due to the nature of the app I used different icons, used some dummy texts and this is not a 'pixel perfect' clone - mainly due to a different api, which dictates a different placement of for example series and movie posters (netflix has them horizontally, tmdb vertically, also another data).",
 		technologies: [
-			{ name: 'NextJS', icon: NEXT_ICON },
 			{ name: 'React', icon: REACT_ICON },
+			{ name: 'Next.js', icon: NEXT_ICON },
 			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 			{ name: 'Firebase', icon: FIREBASE_ICON },
+			{ name: 'HTML', icon: HTML_ICON },
 			{ name: 'CSS', icon: CSS_ICON },
 			{ name: 'Git/Github', icon: GITHUB_ICON },
-			{ name: 'SEO', icon: SEO_ICON },
-			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'netflix-clone',
 		photos: [
@@ -106,41 +137,23 @@ export const projectsList = [
 			'SEO practices',
 			'fully responsive design',
 			'using firebase to log in / log out and auth management',
-			'using LocalStorage to store certain  auth data (no data is collected in this demo)',
-			'the project is built with about 250 components (including custom hooks, API fetching, helpers)',
 		],
-	},
-	{
-		title: 'Wordpress Pages',
-		shortDesc:
-			'Two websites created using Wordpress - one is a typical company website for a law firm created in Polish language, and the other is a small online shop for pet accessories.',
-		description: '',
-		technologies: [
-			{ name: 'Wordpress', icon: WORDPRESS_ICON },
-			{ name: 'RWD', icon: RWD_ICON },
-			{ name: 'SEO', icon: SEO_ICON },
-		],
-		link: 'wordpress',
-		photos: [{ photo: CHANCELLERY_PHOTO1, alt: 'Main site of my portfolio page' }],
-		github: '',
-		live: '',
-		contents: [''],
 	},
 	{
 		title: 'Portfolio Page',
 		shortDesc:
-			'A simple website briefly introducing me, the projects I have created and providing methods to contact me, along with the option to download my CV. Site is tested using JEST and RTL.',
+			'Portfolio Page is a modern, fully responsive website built with Next.js, TypeScript, and Tailwind CSS. It serves as a personal showcase for projects, skills, and contact information, following best practices for SEO and accessibility.',
 		description:
-			'The page you are currently on serves as my portfolio and personal introduction. The site includes information about me, my projects and ways to contact me. It is not an overly complicated application, but clean, clear and comprehensive. The site is created in NextJs (14) using Typescript and Tailwind. Framer motion is a package used to animate the site. It consists of a homepage and three main subpages: about me, projects and contact. Additionally, each project has a separate subpage where you can find more detailed information and photos. Site is tested using JEST and RTL - more than 100 unit tests are written for most components of varying complexity.',
+			"The application is made in Next.js, written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version. Also more than 100 unit tests of varying complexity have been written for the website using JEST and RTL to check the correct behaviour of most components.",
 		technologies: [
-			{ name: 'NextJS', icon: NEXT_ICON },
 			{ name: 'React', icon: REACT_ICON },
+			{ name: 'Next.js', icon: NEXT_ICON },
 			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 			{ name: 'Tailwind', icon: TAILWIN_ICON },
 			{ name: 'JEST', icon: JEST_ICON },
 			{ name: 'React Testing Library', icon: RTL_ICON },
 			{ name: 'Git/Github', icon: GITHUB_ICON },
-			{ name: 'RWD', icon: RWD_ICON },
 		],
 		link: 'my-portfolio',
 		photos: [
@@ -162,145 +175,4 @@ export const projectsList = [
 			'fully responsive design',
 		],
 	},
-	{
-		title: 'Gradebook',
-		shortDesc: 'An application that partly mimics the functioning of an electronic gradebook.',
-		description:
-			'You can log in as either a teacher or a student. When you are logged as a student, you can check your timetable, grades, grade-related statistics, and information about other students/classes. As a teacher, you can also add news, assign grades to individual students and view statistics for the entire school (only two classes are available). It integrates frontend with backend and retrieving data from databases.',
-		technologies: [
-			{ name: 'NextJS', icon: NEXT_ICON },
-			{ name: 'React', icon: REACT_ICON },
-			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
-			{ name: 'Firebase', icon: FIREBASE_ICON },
-			{ name: 'MongoDB', icon: MONGO_ICON },
-			{ name: 'CSS', icon: CSS_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
-			{ name: 'SEO', icon: SEO_ICON },
-		],
-		link: 'gradebook',
-		photos: [
-			{ photo: GRADEBOOK_PHOTO1, alt: 'Login site of the gradebook site' },
-			{ photo: GRADEBOOK_PHOTO2, alt: 'News page when logged as a student on the gradebook site' },
-			{ photo: GRADEBOOK_PHOTO3, alt: 'Add a new grade when logged as a teacher on the gradebook site' },
-			{ photo: GRADEBOOK_PHOTO4, alt: 'Statistics page when logged as a teacher on the gradebook site' },
-		],
-		github: 'https://github.com/tomaszz95/gradebook',
-		live: 'https://gradebookk.vercel.app/',
-		contents: [
-			'login page with full Firebase support (log in, log out, check if the user is logged in)',
-			'news page with some basic non-deletable dummy news – students can only read news, while teachers can add more',
-			'timetable plans for students and teachers',
-			'grade section where students can check their grades from 2 semesters – teachers can add grades for subjects they teach',
-			'statistics page showing student averages in each subject and class averages for students; teachers can view averages for each class and the entire school for comparison',
-			'accessibility practices',
-			'using firebase to log in / log out and auth management',
-			'using MongoDB to store certain database information',
-			'using LocalStorage to store certain auth data',
-			'using dummy data in the database',
-		],
-	},
-	{
-		title: 'Toolkit',
-		shortDesc:
-			'A website featuring the most popular frontend projects written in React – Calculator, Todo List, Note App, Weather App and Finances Manager combined into one website.',
-		description:
-			'The page includes 5 applications: ToDo List, Note App, Finances Manager, Calculator and Weather App. The project is created in React using Create React App, React Router and React Redux. The sites are responsive, using Local Storage to store information (like tasks, notes etc.) and adapted in terms of accessibility.',
-		technologies: [
-			{ name: 'React', icon: REACT_ICON },
-			{ name: 'React Redux', icon: REDUX_ICON },
-			{ name: 'CSS', icon: CSS_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
-			{ name: 'SEO', icon: SEO_ICON },
-			{ name: 'RWD', icon: RWD_ICON },
-		],
-		link: 'toolkit',
-		photos: [
-			{ photo: TOOLKIT_PHOTO1, alt: 'Task application on the toolkit page' },
-			{ photo: TOOLKIT_PHOTO2, alt: 'Finances manager on the toolkit page' },
-			{ photo: TOOLKIT_PHOTO3, alt: 'Weather app on the toolkit page' },
-			{ photo: TOOLKIT_PHOTO4, alt: 'Note app on the toolkit page' },
-		],
-		github: 'https://github.com/tomaszz95/toolkit',
-		live: 'https://toolkiit.netlify.app/',
-		contents: [
-			'five fully functional sites with five different apps',
-			'ToDo List: add, mark as completed, delete, and edit tasks',
-			'Note App: add, edit, and delete notes',
-			'Finances Manager: add transactions, delete, and calculate total spending/savings',
-			'simple calculator app with error handling',
-			'Weather App providing detailed weather information for searched cities',
-			'fully responsive design',
-			'accessibility practices',
-			'light/dark themes option',
-		],
-	},
-	{
-		title: 'Surveying website',
-		shortDesc: 'A simple, fully functional, and responsive website for a surveying company.',
-		description:
-			'This is my first website, that can be a site for surveying company. It includes good practices for SEO, accessibility, cleanliness and code quality. The site is simple, contains all the information a client might need, presented tidily. The design is based on other surveying websites.',
-		technologies: [
-			{ name: 'HTML', icon: HTML_ICON },
-			{ name: 'CSS', icon: CSS_ICON },
-			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
-			{ name: 'GULP', icon: GULP_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
-			{ name: 'SEO', icon: SEO_ICON },
-			{ name: 'RWD', icon: RWD_ICON },
-		],
-		link: 'asgeodesy',
-		photos: [
-			{ photo: GEODESY_PHOTO1, alt: 'Homepage of the surveying site' },
-			{ photo: GEODESY_PHOTO2, alt: 'Additional info about company on the surveying site' },
-			{ photo: GEODESY_PHOTO3, alt: 'Services provided on the surveying site' },
-			{ photo: GEODESY_PHOTO4, alt: 'Contact page on the surveying site' },
-		],
-		github: 'https://github.com/tomaszz95/geodesy-site',
-		live: 'https://asgeodesy.netlify.app/',
-		contents: [
-			'main site and three pages (services, about us and contact)',
-			'custom 404 page and redirects',
-			'fully responsive design',
-			'accessibility practices',
-			'SEO practices',
-			'preservation of basic design requirements',
-		],
-	},
-]
-
-export const wordpressProjects = [
-	{
-		title: 'PZB Law Company',
-		shortDesc:
-			'Website created using Wordpress and Gutenberg - in addition Astra was used as a theme. It is a fully functional and responsive web application that is a showcase for the law firm. Site is created in Polish language.',
-		description:
-			"The website consists of five sub-pages. The main page, where all the advantages and incentives to use the law firm's services are briefly described. Then there are the 'about us' and 'team' sub-pages where, as the name suggests, the firm's history is described, clients are listed and team members are introduced. This is followed by a listing of services and an indication of how the process with the client will be carried out, ending with a 'contact us' sub-page where you can use the form to write to the firm.",
-		photos: [
-			{ photo: CHANCELLERY_PHOTO1, alt: 'Main site of chancellery site' },
-			{ photo: CHANCELLERY_PHOTO2, alt: 'Main site of chancellery site1' },
-			{ photo: CHANCELLERY_PHOTO3, alt: 'Law team of chancellery site' },
-			{ photo: CHANCELLERY_PHOTO4, alt: 'What law team do in chancellery site' },
-		],
-		live: 'https://pzbkancelaria.pl/',
-	},
-	{
-		title: 'Animals Empire online shop',
-		shortDesc:
-			'Website created using Wordpress and Gutenberg - in addition Astra was used as a theme. It is a fully functional and responsive web application that is a showcase for the law firm. Site is created in Polish language.',
-		description:
-			'It is a fully functional online shop with many products, categories, shop rules, privacy policy. You can add products to the basket, remove them, select others, in addition, the whole purchasing process also works - right down to the email to the buyer. You can search for products, undo, select the size. Of course, the ability to send payment has been disabled, but this is only a demo version of the shop.',
-		photos: [
-			{ photo: ANIMALS_PHOTO1, alt: 'Main site of animals online shop site' },
-			{ photo: ANIMALS_PHOTO2, alt: 'Product to buy in animals online shop site' },
-			{ photo: ANIMALS_PHOTO3, alt: 'Card view in online shop site' },
-			{ photo: ANIMALS_PHOTO4, alt: 'Single product site of animals online shop site' },
-		],
-		live: 'https://animalempire.eu/',
-	},
-]
-
-export const wordpressTechnologies = [
-	{ name: 'Wordpress', icon: WORDPRESS_ICON },
-	{ name: 'RWD', icon: RWD_ICON },
-	{ name: 'SEO', icon: SEO_ICON },
 ]
