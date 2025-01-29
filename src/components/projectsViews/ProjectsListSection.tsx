@@ -1,4 +1,5 @@
 import ProjectItem from '../projectItem/ProjectItem'
+
 import { projectsList } from '../../constans/projects'
 
 const ProjectsListSection = () => {

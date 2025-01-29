@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react'
+
 import SingleProjectContains from './SingleProjectContains'
-import photo from '../../assets/photos/netflix1.png'
+
+import photo from '../../assets/photos/netflix1.jpg'
 
 const contents = ['Content 1', 'Content 2', 'Content 3']
 
@@ -18,7 +20,7 @@ describe('SingleProjectContains component', () => {
 		expect(listItems).toHaveLength(contents.length)
 
 		contents.forEach(content => {
-			expect(screen.getByText(`- ${content}`)).toBeInTheDocument()
+			expect(screen.getByText(`• ${content}`)).toBeInTheDocument()
 		})
 	})
 

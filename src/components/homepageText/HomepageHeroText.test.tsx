@@ -1,4 +1,5 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
+
 import HomepageHeroText from './HomepageHeroText'
 
 describe('HomepageHeroText component', () => {
@@ -10,7 +11,7 @@ describe('HomepageHeroText component', () => {
 
 	test('renders span element has correct color', () => {
 		render(<HomepageHeroText />)
-		const highlightedText = screen.getByText(/Junior Frontend Developer/)
+		const highlightedText = screen.getByText(/Frontend Developer/)
 		expect(highlightedText).toHaveClass('text-hightlight')
 	})
 

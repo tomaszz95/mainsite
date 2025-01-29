@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Image, { StaticImageData } from 'next/image'
+
 import { createPortal } from 'react-dom'
 
 import PhotoModal from '../photoModal/PhotoModal'

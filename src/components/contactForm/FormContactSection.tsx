@@ -128,6 +128,7 @@ const FormContactSection = () => {
 				}>
 				{!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
 			</button>
+
 			{status.isModalOpen &&
 				createPortal(<FormModal message={status.info.msg} onCloseModal={closeModalHandler} />, document.body)}
 		</form>

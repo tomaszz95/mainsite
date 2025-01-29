@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 import { motion } from 'framer-motion'
 
+import Wrapper from '../layout/Wrapper'
 import HomepageAboutText from '../homepageText/HomepageAboutText'
 import CenteredSection from '../layout/CenteredSection'
-import Wrapper from '../layout/Wrapper'
 
-import IMAGE from '../../assets/photos/aboutme.jpg'
+import AboutmeImage from '../../assets/photos/aboutme.jpg'
 
 const AboutMeSection = () => {
 	return (
@@ -20,7 +20,7 @@ const AboutMeSection = () => {
 					transition={{ duration: 0.8 }}
 					className='w-72 h-72 lg:w-80 lg:h-80 saturate-50 md:mx-12 xl:md:mx-20'>
 					<Image
-						src={IMAGE}
+						src={AboutmeImage}
 						alt='Programmer with dreadlocks is sitting in front of three monitors and writing code'
 						className='rounded-full'
 					/>

@@ -175,4 +175,72 @@ export const projectsList = [
 			'fully responsive design',
 		],
 	},
+	{
+		title: 'Law Company Website',
+		shortDesc:
+			'A fully functional website as a business card for a respected law firm. Written in English, it provides detailed information about the company’s team, services, and contact options in a professional layout.',
+		description:
+			'The application is built with Next.js, written in TypeScript, and styled using CSS Modules. It is a fully responsive website with multiple subpages, including information about the law firm, services offered, and contact details. The site follows best SEO practices, ensuring fast performance and accessibility, while dynamically rendering legal service details to provide a seamless user experience. A contact form is integrated to facilitate easy communication with the firm. Additionally, the website is optimized for scalability and maintainability, making it easy to extend with new features. ',
+		technologies: [
+			{ name: 'React', icon: REACT_ICON },
+			{ name: 'Next.js', icon: NEXT_ICON },
+			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
+			{ name: 'HTML', icon: HTML_ICON },
+			{ name: 'CSS', icon: CSS_ICON },
+			{ name: 'Git/Github', icon: GITHUB_ICON },
+		],
+		link: 'pzblawcompany',
+		photos: [
+			{ photo: LAWCOMPANY_PHOTO1, alt: 'Main site of law company site' },
+			{ photo: LAWCOMPANY_PHOTO2, alt: 'Section why our company of law company site' },
+			{ photo: LAWCOMPANY_PHOTO3, alt: 'Meet our team section in team site of law company site' },
+			{ photo: LAWCOMPANY_PHOTO4, alt: 'What do we do section in services site of law company site' },
+		],
+		github: 'https://github.com/tomaszz95/pzblawcompany',
+		live: 'https://pzblawcompany.vercel.app/',
+		contents: [
+			'fully functional website as a business card for a respected law firm',
+			'main page with some major informations',
+			'four subpages – about us, team, services and contact,',
+			'accessibility practices',
+			'SEO practices',
+			'fully responsive design',
+			'custom `not found` page',
+		],
+	},
+	{
+		title: 'ASGeodezja Website',
+		shortDesc:
+			'A professional website created for a fictional geodesy company. The content is written in Polish, with a clear and straightforward structure tailored to highlight the services offered by land surveyors.',
+		description:
+			"The application is built with Next.js, written in TypeScript, and styled using CSS Modules. It is a fully responsive website that presents ASGeodezja’s geodetic services, company details, and contact information. The site follows best SEO practices, ensuring high performance and accessibility. A dedicated services page details the firm's offerings, including land surveying, property division, and investment support. Additionally, the contact section allows clients to easily reach out, while the website remains scalable and adaptable for future updates.",
+		technologies: [
+			{ name: 'React', icon: REACT_ICON },
+			{ name: 'Next.js', icon: NEXT_ICON },
+			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
+			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
+			{ name: 'HTML', icon: HTML_ICON },
+			{ name: 'CSS', icon: CSS_ICON },
+			{ name: 'Git/Github', icon: GITHUB_ICON },
+		],
+		link: 'asgeodesy',
+		photos: [
+			{ photo: GEODESY_PHOTO1, alt: 'Main site of geodesy company site' },
+			{ photo: GEODESY_PHOTO2, alt: 'Section informations of geodesy company site' },
+			{ photo: GEODESY_PHOTO3, alt: 'Our services section in services site of geodesy company site' },
+			{ photo: GEODESY_PHOTO4, alt: 'Our team section in about us site of geodesy company site' },
+		],
+		github: 'https://github.com/tomaszz95/asgeodesy',
+		live: 'https://asgeodezja.vercel.app/',
+		contents: [
+			'fully functional website as a business card for a geodesy company in polish language',
+			'main page with some major informations',
+			'three subpages – about us, services and contact,',
+			'accessibility practices',
+			'SEO practices',
+			'fully responsive design',
+			'custom `not found` page',
+		],
+	},
 ]
