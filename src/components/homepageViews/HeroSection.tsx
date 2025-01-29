@@ -9,7 +9,7 @@ import CenteredSection from '../layout/CenteredSection'
 import SectionBlock from '../UI/SectionBlock'
 import HomepageHeroText from '../homepageText/HomepageHeroText'
 
-import IMAGE from '../../assets/photos/programming1.jpg'
+import HeroImage from '../../assets/photos/programming1.jpg'
 
 const HeroSection = () => {
 	return (
@@ -22,7 +22,7 @@ const HeroSection = () => {
 					transition={{ duration: 0.8 }}
 					className='hidden lg:inline-block w-1/2 max-w-[450px] saturate-50 ml-12'>
 					<Image
-						src={IMAGE}
+						src={HeroImage}
 						alt='Programmer with dreadlocks is sitting in front of three monitors and writing code'
 						priority
 					/>

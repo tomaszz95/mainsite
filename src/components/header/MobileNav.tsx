@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import NavLink from './NavLink'
+
 import { navigation } from '../../constans/navigationLinks'
 
 import CLOSE from '../../assets/icons/close.png'

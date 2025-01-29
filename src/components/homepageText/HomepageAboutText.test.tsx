@@ -10,7 +10,7 @@ jest.mock('next/router', () => ({
 describe('HomepageAboutText component', () => {
 	test('renders paragraph correctly', () => {
 		render(<HomepageAboutText />)
-		const paragraph = screen.getByText(/What began as mere curiosity/i)
+		const paragraph = screen.getByText(/I’ve been learning programming/i)
 		expect(paragraph).toBeInTheDocument()
 	})
 

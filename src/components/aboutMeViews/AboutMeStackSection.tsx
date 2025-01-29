@@ -2,6 +2,7 @@ import Wrapper from '../layout/Wrapper'
 import CenteredSection from '../layout/CenteredSection'
 import StackList from '../UI/StackList'
 import HeadingTwo from '../UI/HeadingTwo'
+
 import { techStack, techToLearn } from '../../constans/aboutmeStack'
 
 const AboutMeStackSection = () => {

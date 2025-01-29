@@ -3,10 +3,11 @@
 import Image from 'next/image'
 
 import { motion } from 'framer-motion'
+
 import DetailsText from './DetailsText'
 import DetailsInfo from './DetailsInfo'
 
-import IMAGE from '../../assets/photos/profilephoto.jpg'
+import AboutMeImage from '../../assets/photos/profilephoto.jpg'
 
 const AboutMeDetails = () => {
 	return (
@@ -16,7 +17,7 @@ const AboutMeDetails = () => {
 			transition={{ duration: 0.8 }}
 			className='w-full grid grid-col-1 place-items-center lg:grid-cols-3 lg:gap-8'>
 			<Image
-				src={IMAGE}
+				src={AboutMeImage}
 				alt='Programmer with dreadlocks profile photo'
 				priority
 				className='saturate-50 w-full max-w-[400px] lg:col-start-1 lg:col-end-2'

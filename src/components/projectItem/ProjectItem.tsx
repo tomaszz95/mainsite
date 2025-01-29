@@ -1,7 +1,9 @@
 'use client'
+
+import Image from 'next/image'
+
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
-import Image from 'next/image'
 
 import CenteredSection from '../layout/CenteredSection'
 import PhotoModal from '../photoModal/PhotoModal'

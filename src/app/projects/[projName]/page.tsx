@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 
 import SingleProjectView from '../../../components/singleProjectView/SingleProjectView'
+
 import { filterSingleProject } from '../../../helpers/filterSingleProject'
 
 type ComponentType = {

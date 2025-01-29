@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import Image from 'next/image'
+import { useState } from 'react'
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'

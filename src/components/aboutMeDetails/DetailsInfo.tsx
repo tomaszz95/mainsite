@@ -1,5 +1,6 @@
-import { aboutMeInfo } from '../../constans/aboutmeInfo'
 import SocialLinks from '../socialIconLinks/SocialLinks'
+
+import { aboutMeInfo } from '../../constans/aboutmeInfo'
 
 const DetailsInfo = () => {
 	return (
