@@ -28,7 +28,7 @@
 - Axios / Vercel / Formspree,
 - Framer Motion,
 - Git / Github,
-- responsive / SEO
+- Responsive / SEO
 
 <div align='center'>
  <img src='./src/assets/photos/portfolio1.jpg'>
