@@ -2,9 +2,9 @@ const DetailsText = () => {
 	return (
 		<div className='my-4 max-w-[500px] lg:col-start-2 lg:col-end-3 text-center lg:text-[17px] lg:mt-0'>
 			<p className='my-6'>
-				My programming journey started over two years ago with HTML, CSS, and JavaScript. I quickly moved on to React
+				My programming journey started nearly 3 years ago with HTML, CSS and JavaScript. I quickly moved on to React
 				and Next.js, which became the core of my frontend skills. Over time, I began exploring backend development with
-				Node.js, Express.js, and Mongoose, working with databases like MongoDB and Firebase, as well as integrating REST
+				Node.js, Express.js, Mongoose, MySQL and Postgresql, working with databases like SQL, MongoDB and Firebase, as well as integrating REST
 				APIs. I’m continuously learning and expanding my skills in both areas.
 			</p>
 			<p className='my-6'>
