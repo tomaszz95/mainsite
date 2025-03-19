@@ -8,7 +8,7 @@ const PersonalInfoSection = () => {
 	return (
 		<Wrapper classes='oddSection'>
 			<CenteredSection classes='mt-10 xl:mt-16'>
-				<HeadingOne text='About' coloredText='Myself' />
+				<HeadingOne text='About' coloredText='me' />
 				<AboutMeDetails />
 			</CenteredSection>
 			<SectionBlock direction='left' />

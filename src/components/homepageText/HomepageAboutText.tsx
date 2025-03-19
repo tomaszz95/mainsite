@@ -14,7 +14,7 @@ const HomepageAboutText = () => {
 					is to continue developing my skills as a full-stack developer and take on more complex projects.
 				</p>
 			</div>
-			<LinkButton href='/about' openNewWindow={false}>
+			<LinkButton href='/aboutme' openNewWindow={false}>
 				More about me
 			</LinkButton>
 		</div>
