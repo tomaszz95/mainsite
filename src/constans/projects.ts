@@ -63,7 +63,7 @@ export const projectsList = [
 	{
 		title: 'NeXtPC E-commerce',
 		shortDesc:
-			'NeXtPC is a dynamic online store with product browsing, cart management, and secure checkout, built using modern web technologies like Next.js, React, and MongoDB.',
+			'E-commerce platform crafted with Next.js and SCSS for a responsive, fast-loading experience. Backend powered by Node.js/Express with JWT authentication and MongoDB for product and user management.',
 		description:
 			'I would like to present with the greatest pleasure my most advanced project, which is a fully functional ecommerce website selling electronic items. I created the entire project from scratch: the frontend was written in Next.js (also Typescript), the backend in Node.js using Express.js and Mongoose, and I used a MongoDB database (REST API). The application contains many pages - starting with the home page through individual product categories, sub-pages with individual products, where you can rate the products, the ability to log in/register, and the entire process of buying a product up to payment (which, of course, since this is not a full-fledged application, ends when you have to pay for the product). Being logged in allows you to add products to your favorites, save your data and track products later.',
 		technologies: [
@@ -103,7 +103,7 @@ export const projectsList = [
 	{
 		title: 'Netflix Clone',
 		shortDesc:
-			'A website that is a clone of Netflix – it is fully responsive, with SEO and accessibility practices and with many features from the original streaming site.',
+			'Netflix replica developed with Next.js and SCSS for a sleek, dynamic UI. Movie data fetched from TMDB API with Axios, featuring category filtering and smooth animations.',
 		description:
 			"I present to you my Netflix clone project. The project is created in Next.js using a small amount of React Redux, Firebase and written in Typescript. The page is fully responsive - for mobiles, tablets and desktops. The app is 'cloning' the Netflix site - I used the TMDB database, which is not as detailed as the Netflix one, this means no videos, no detailed information about individual episodes of series or other detailed data. The application contains many sub-pages, starting from the main view, through the whole process of logging in and registering, selecting a profile and editing it, up to the main page of series, movies and individual sub-pages. Due to the nature of the app I used different icons, used some dummy texts and this is not a 'pixel perfect' clone - mainly due to a different api, which dictates a different placement of for example series and movie posters (netflix has them horizontally, tmdb vertically, also another data).",
 		technologies: [
@@ -142,7 +142,7 @@ export const projectsList = [
 	{
 		title: 'Portfolio Page',
 		shortDesc:
-			'Portfolio Page is a modern, fully responsive website built with Next.js, TypeScript, and Tailwind CSS. It serves as a personal showcase for projects, skills, and contact information, following best practices for SEO and accessibility.',
+			'Personal portfolio site built with Next.js and SCSS to showcase projects and skills. Dynamic content rendered with Next.js features, optimized for responsiveness and speed. Deployed on Vercel for a clean, live presentation.',
 		description:
 			"The application is made in Next.js, written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version. Also more than 100 unit tests of varying complexity have been written for the website using JEST and RTL to check the correct behaviour of most components.",
 		technologies: [
@@ -178,7 +178,7 @@ export const projectsList = [
 	{
 		title: 'Law Company Website',
 		shortDesc:
-			'A fully functional website as a business card for a respected law firm. Written in English, it provides detailed information about the company’s team, services, and contact options in a professional layout.',
+			'Professional landing page developed with Next.js and SCSS for a polished, mobile-first layout. Dynamic elements rendered with Next.js, enhanced with SEO for better visibility.',
 		description:
 			'The application is built with Next.js, written in TypeScript, and styled using CSS Modules. It is a fully responsive website with multiple subpages, including information about the law firm, services offered, and contact details. The site follows best SEO practices, ensuring fast performance and accessibility, while dynamically rendering legal service details to provide a seamless user experience. A contact form is integrated to facilitate easy communication with the firm. Additionally, the website is optimized for scalability and maintainability, making it easy to extend with new features. ',
 		technologies: [
@@ -212,7 +212,7 @@ export const projectsList = [
 	{
 		title: 'ASGeodezja Website',
 		shortDesc:
-			'A professional website created for a fictional geodesy company. The content is written in Polish, with a clear and straightforward structure tailored to highlight the services offered by land surveyors.',
+			'Landing page created with Next.js and SCSS for a modern, responsive design. SEO optimized and powered by Next.js API routes for dynamic content delivery.',
 		description:
 			"The application is built with Next.js, written in TypeScript, and styled using CSS Modules. It is a fully responsive website that presents ASGeodezja’s geodetic services, company details, and contact information. The site follows best SEO practices, ensuring high performance and accessibility. A dedicated services page details the firm's offerings, including land surveying, property division, and investment support. Additionally, the contact section allows clients to easily reach out, while the website remains scalable and adaptable for future updates.",
 		technologies: [
