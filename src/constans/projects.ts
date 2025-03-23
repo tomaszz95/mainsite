@@ -202,7 +202,7 @@ export const projectsList = [
 		contents: [
 			'fully functional website as a business card for a respected law firm',
 			'main page with some major informations',
-			'four subpages – about us, team, services and contact,',
+			'four subpages – about us, team, services and contact',
 			'accessibility practices',
 			'SEO practices',
 			'fully responsive design',
