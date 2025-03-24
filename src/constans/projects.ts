@@ -236,7 +236,7 @@ export const projectsList = [
 		contents: [
 			'fully functional website as a business card for a geodesy company in polish language',
 			'main page with some major informations',
-			'three subpages – about us, services and contact,',
+			'three subpages – about us, services and contact',
 			'accessibility practices',
 			'SEO practices',
 			'fully responsive design',
