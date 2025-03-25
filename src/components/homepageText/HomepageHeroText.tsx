@@ -6,9 +6,10 @@ const HomepageHeroText = () => {
 		<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
 			<HeadingOne text='Hello, I am' coloredText='Tomek' />
 			<p className='text-lg lg:text-xl'>
-				Hi, I am an aspiring <span className='text-hightlight'>Frontend Developer</span> with 3 years of experience,
-				passionate about building clean and functional web apps. I specialize in React and Next.js, with a growing knack
-				for full-stack development using Node.js, Express, and databases like MongoDB and SQL.
+				<span className='text-hightlight'>Frontend Developer with 3 years of experience</span>, skilled in React and
+				Next.js. I’m passionate about crafting clean, responsive web apps and bring growing expertise in full-stack
+				development with Node.js, Express, and databases like MongoDB and SQL. My focus is on delivering high-quality,
+				user-friendly solutions.
 			</p>
 			<div className='flex flex-col sm:flex-row items-center justify-between mt-10 xl:mt-14 text-center'>
 				<a
