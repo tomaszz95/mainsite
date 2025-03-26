@@ -6,7 +6,7 @@ const HomepageHeroText = () => {
 		<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
 			<HeadingOne text='Hello, I am' coloredText='Tomek' />
 			<p className='text-lg lg:text-xl'>
-				<span className='text-hightlight'>Frontend Developer with 3 years of experience</span>, skilled in React and
+				<span className='text-hightlight'>Frontend Developer with nearly 3 years of non-comercial experience</span>, skilled in React and
 				Next.js. I’m passionate about crafting clean, responsive web apps and bring growing expertise in full-stack
 				development with Node.js, Express, and databases like MongoDB and SQL. My focus is on delivering high-quality,
 				user-friendly solutions.
