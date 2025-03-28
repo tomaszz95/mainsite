@@ -1,22 +1,22 @@
 <h1>Portfolio page</h1>
 
-<p>Hello, I present to you my portfolio page. The application is made in Next.js, written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version. Also more than 100 unit tests of varying complexity have been written for the website using JEST and RTL to check the correct behaviour of most components.</p>
+<p>Welcome! This is my portfolio page, built with Next.js, TypeScript, and Tailwind CSS for styling. The site is fully responsive across all devices and follows top SEO practices. It’s a straightforward app featuring sub-pages like About Me, Contact, and Projects, plus dynamic pages for individual projects I’ve created. You can explore details about me, my contact info, the technologies I use, and even download my resume directly from the site. The Projects section showcases my work with links to GitHub repositories, live demos, and deeper insights into each one. Plus, I’ve written over 100 unit tests of varying complexity using Jest and RTL to ensure most components work flawlessly.</p>
 
-<p>I encourage you to check the website - uploaded to vercel <a href='https://tomaszzportfolio.vercel.app/'>Portfolio</a></p>
+<p>Check out the live demo hosted on Vercel: <a href='https://tomaszzportfolio.vercel.app/'>Portfolio</a></p>
 
 <h2>📫 Project contains</h2>
 
-- main pages with some basic informations about me,
-- three sub-pages - about me, projects and contact,
-- dynamic pages contains single projects and data about them,
-- a fully functioning form where you can send me direct email if you want to contact me (uses a form provided by Vercel and Formspree),
-- site is tested using JEST and RTL - more than 100 unit tests are witten for most components
-- also using Axios to send form to my email,
-- framer motion package used to animate site,
-- project is fully responsive,
-- accessibility practices,
-- SEO practices,
-- custom not found page,
+- Main pages with basic info about me
+- Three sub-pages: About Me, Projects, and Contact
+- Dynamic pages featuring individual projects and their details
+- Fully functional contact form sending emails via Vercel and Formspree
+- Over 100 unit tests written with Jest and RTL for most components
+- Axios integration for form submission to my email
+- Framer Motion for site animations
+- Fully responsive design
+- Accessibility-friendly practices
+- SEO-optimized structure
+- Custom "Not Found" page
 
 <h2>🛠 Used tools / programming languages / technologies</h2>
 
