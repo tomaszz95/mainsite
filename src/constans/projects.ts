@@ -39,21 +39,21 @@ export const selectedProjects = [
 	{
 		title: 'Netflix clone',
 		description:
-			'Is a web application designed to replicate key features of Netflix. Built using Next.js, React and TypeScript, the project showcases a responsive and functional design, offering users an engaging streaming experience.',
+			"Responsive web app built with Next.js, TypeScript, a touch of React Redux, and Firebase, mimicking Netflix's layout with multiple sub-pages like login/registration, profile selection, and movie/series views. It uses the TMDB database for data, lacking videos and detailed episode info.",
 		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Firebase', 'MongoDB'],
 		link: '/projects/netflix-clone',
 	},
 	{
 		title: 'E-commerce Website',
 		description:
-			'NeXtPC is a fully functional online store page, simulates an e-commerce store where users can browse products, add them to their shopping cart, and proceed with checkout. The project includes both the frontend layer and the complete backend, along with seamless integration for database communication.',
+			'Fully functional e-commerce website for electronic items, built with Next.js and TypeScript frontend, and a Node.js, Express, and Mongoose backend. The responsive app features multiple pages, including individual product sub-pages with ratings, login/register functionality, and a complete buying process up to payment.',
 		technologies: ['React', 'Next.js', 'Typescript', 'Node.js', 'Express.js', 'Mongoose'],
 		link: '/projects/nextpc',
 	},
 	{
 		title: 'Law Company Page',
 		description:
-			'A company website designed for a fictional law firm. Written in English, it provides detailed information about the company’s team, services, and contact options in a professional layout.',
+			'Professional landing page for a law firm built with Next.js, delivering a sleek, mobile-first design. Dynamic elements are rendered via Next.js and optimized with SEO for greater visibility.',
 		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Git/Github', 'HTML/CSS'],
 		link: '/projects/pzblawcompany',
 	},
@@ -63,9 +63,9 @@ export const projectsList = [
 	{
 		title: 'NeXtPC E-commerce',
 		shortDesc:
-			'E-commerce platform crafted with Next.js and SCSS for a responsive, fast-loading experience. Backend powered by Node.js/Express with JWT authentication and MongoDB for product and user management.',
+			'Fully functional e-commerce website for electronic items, built with Next.js and TypeScript frontend, and a Node.js, Express, and Mongoose backend. The responsive app features multiple pages, including product categories, individual product sub-pages with ratings, login/register functionality, and a complete buying process up to payment.',
 		description:
-			'I would like to present with the greatest pleasure my most advanced project, which is a fully functional ecommerce website selling electronic items. I created the entire project from scratch: the frontend was written in Next.js (also Typescript), the backend in Node.js using Express.js and Mongoose, and I used a MongoDB database (REST API). The application contains many pages - starting with the home page through individual product categories, sub-pages with individual products, where you can rate the products, the ability to log in/register, and the entire process of buying a product up to payment (which, of course, since this is not a full-fledged application, ends when you have to pay for the product). Being logged in allows you to add products to your favorites, save your data and track products later.',
+			'I would like to present my most advanced project, which is a fully functional ecommerce website selling electronic items. I created the entire project from scratch: the frontend was written in Next.js (also Typescript), the backend in Node.js using Express.js and Mongoose, also I used a MongoDB database (REST API). The page is fully responsive - for mobiles, tablets and desktops. The application contains many pages - starting with the home page through individual product categories, sub-pages with individual products, where you can rate the products, the ability to log in/register, and the entire process of buying a product up to payment (which, of course, since this is not a full-fledged application, ends when you have to pay for the product). Being logged in allows you to add products to your favorites, save your data and track products later.',
 		technologies: [
 			{ name: 'Next.js', icon: NEXT_ICON },
 			{ name: 'React', icon: REACT_ICON },
@@ -86,26 +86,26 @@ export const projectsList = [
 		github: 'https://github.com/tomaszz95/ecommerce',
 		live: 'https://nextpc.vercel.app/',
 		contents: [
-			'homepage, shop page, category page, product page and many, many more',
-			'self-written backend to handle CRUD operations of order, login, cart, favorite products, comments',
-			'REST API connection with MongoDB to collect and store data',
-			'supports the login/registration process and subsequent editing of user data',
-			'full support for adding the product to the cart, handling the order, collecting data',
-			'possibility to search for products by name',
-			'security on the frontend as well as the backend so that the user cannot enter incorrect data',
+			'homepage, shop page, category pages, product pages, and more',
+			'custom backend for managing CRUD operations (orders, login, cart, favorites, comments)',
+			'REST API using MongoDB to store and manage data',
+			'login/registration with user data editing',
+			'full cart functionality, order handling, and checkout process',
+			'ability to search products by name',
+			'frontend and backend security to prevent invalid data, plus cookie support',
 			'fully responsive design',
 			'accessibility-friendly practices',
 			'SEO-optimized structure',
-
-			'custom 404 and 500 page',
+			'follows core design principles',
+			'custom 404 and 500 pages',
 		],
 	},
 	{
 		title: 'Netflix Clone',
 		shortDesc:
-			'Netflix replica developed with Next.js and SCSS for a sleek, dynamic UI. Movie data fetched from TMDB API with Axios, featuring category filtering and smooth animations.',
+			"Responsive web app built with Next.js, TypeScript, a touch of React Redux, and Firebase, mimicking Netflix's layout with multiple sub-pages like login/registration, profile selection, and movie/series views. It uses the TMDB database for data, lacking videos and detailed episode info. Users can browse movies and series by category.",
 		description:
-			"I present to you my Netflix clone project. The project is created in Next.js using a small amount of React Redux, Firebase and written in Typescript. The page is fully responsive - for mobiles, tablets and desktops. The app is 'cloning' the Netflix site - I used the TMDB database, which is not as detailed as the Netflix one, this means no videos, no detailed information about individual episodes of series or other detailed data. The application contains many sub-pages, starting from the main view, through the whole process of logging in and registering, selecting a profile and editing it, up to the main page of series, movies and individual sub-pages. Due to the nature of the app I used different icons, used some dummy texts and this is not a 'pixel perfect' clone - mainly due to a different api, which dictates a different placement of for example series and movie posters (netflix has them horizontally, tmdb vertically, also another data).",
+			'I would like to share with you my Netflix clone project, built using Next.js with a touch of React Redux, Firebase, and TypeScript. The app is fully responsive, working seamlessly on mobiles, tablets, and desktops. It mimics the Netflix experience with the TMDB database, though it’s less detailed—meaning no videos or in-depth episode info. The project includes numerous sub-pages, from the main view to login/registration, profile selection and editing, plus dedicated pages for series, movies, and individual titles. Since it’s not a pixel-perfect clone, I’ve used unique icons, dummy text, and a vertical layout for posters, adapting to TMDB’s API differences compared to Netflix’s horizontal design.',
 		technologies: [
 			{ name: 'React', icon: REACT_ICON },
 			{ name: 'Next.js', icon: NEXT_ICON },
@@ -126,25 +126,25 @@ export const projectsList = [
 		github: 'https://github.com/tomaszz95/Netflixclone',
 		live: 'https://netflixcloneen.vercel.app/',
 		contents: [
-			'main pages for guests and for logged-in users (with slight differences for children, but data remains the same due to the API)',
-			'around 30 different subpages (including the dynamic ones with series and films data)',
-			'full Netflix registration process (choosing devices, languages, series)',
-			'user authentication features (login, sign-in, logout, register)',
-			'series/movie searching by title',
-			"when a user is logged in, additional options are available (profile editing, 'watching series', browse / kids page)",
+			'main pages for guests and logged-in users (slight tweaks for kids, same API data)',
+			'about 30 sub-pages, including dynamic ones with series and movie data',
+			'full Netflix-style registration with device, language, and series selection',
+			'user authentication (login, logout, registration, and sign-in)',
+			'series and movie search by title',
+			"Extra features for logged-in users (profile editing, 'watching series', browse/kids pages)",
 			'custom 404 and 500 pages',
-			'accessibility practices',
-			'SEO practices',
+			'accessibility-friendly practices',
+			'SEO-optimized structure',
 			'fully responsive design',
-			'using firebase to log in / log out and auth management',
+			'firebase-powered login, logout, and authentication management',
 		],
 	},
 	{
 		title: 'Portfolio Page',
 		shortDesc:
-			'Personal portfolio site built with Next.js and SCSS to showcase projects and skills. Dynamic content rendered with Next.js features, optimized for responsiveness and speed. Deployed on Vercel for a clean, live presentation.',
+			'This portfolio site, built with Next.js, TypeScript, and Tailwind CSS, is fully responsive and SEO-optimized, featuring sub-pages for about me, contact, and projects. It includes dynamic project pages with details, GitHub links, live demos, and a downloadable resume. Over 100 unit tests using Jest and RTL ensure component reliability.',
 		description:
-			"The application is made in Next.js, written in Typescript and using Tailwind for styling - page is fully responsive and with best SEO practices. It's a simple site with several sub-pages (about me, contact and projects), as well as dynamic pages for single created project. On the site you can read some information about me, how to contact me, what technologies I work in, and also download my resume. In addition, on the projects sub-page there are projects created by me, as well as the opportunity to read more information about them, a link to github and live version. Also more than 100 unit tests of varying complexity have been written for the website using JEST and RTL to check the correct behaviour of most components.",
+			'Welcome! This is my portfolio page, built with Next.js, TypeScript, and Tailwind CSS for styling. The site is fully responsive across all devices and follows top SEO practices. It’s a straightforward app featuring sub-pages like About Me, Contact, and Projects, plus dynamic pages for individual projects I’ve created. You can explore details about me, my contact info, the technologies I use, and even download my resume directly from the site. The Projects section showcases my work with links to GitHub repositories, live demos, and deeper insights into each one. Plus, I’ve written over 100 unit tests of varying complexity using Jest and RTL to ensure most components work flawlessly.',
 		technologies: [
 			{ name: 'React', icon: REACT_ICON },
 			{ name: 'Next.js', icon: NEXT_ICON },
@@ -166,21 +166,24 @@ export const projectsList = [
 		live: 'https://tomaszzportfolio.vercel.app/',
 		contents: [
 			'main pages with basic info about me',
-			'three subpages – about, projects and contact, along with dynamic pages offering more detailed project information',
-			'framer motion package used to animate the site',
-			'site is tested using JEST and RTL - more than 100 unit tests are witten for most components',
-			'custom `not found` page',
-			'accessibility practices',
-			'SEO practices',
+			'three sub-pages: About Me, Projects, and Contact',
+			'dynamic pages featuring individual projects and their details',
+			'fully functional contact form sending emails via Vercel and Formspree',
+			'over 100 unit tests written with Jest and RTL for most components',
+			'axios integration for form submission to my email',
+			'framer Motion for site animations',
 			'fully responsive design',
+			'accessibility-friendly practices',
+			'SEO-optimized structure',
+			'custom "Not Found" page',
 		],
 	},
 	{
 		title: 'Law Company Website',
 		shortDesc:
-			'Professional landing page developed with Next.js and SCSS for a polished, mobile-first layout. Dynamic elements rendered with Next.js, enhanced with SEO for better visibility.',
+			'Professional landing page for a law firm built with Next.js, delivering a sleek, mobile-first design. Dynamic elements are rendered via Next.js and optimized with SEO for greater visibility.',
 		description:
-			'The application is built with Next.js, written in TypeScript, and styled using CSS Modules. It is a fully responsive website with multiple subpages, including information about the law firm, services offered, and contact details. The site follows best SEO practices, ensuring fast performance and accessibility, while dynamically rendering legal service details to provide a seamless user experience. A contact form is integrated to facilitate easy communication with the firm. Additionally, the website is optimized for scalability and maintainability, making it easy to extend with new features. ',
+			'The website is developed using Next.js, TypeScript, and CSS Modules for styling. It’s fully responsive, featuring sub-pages with details about the law firm, its services, and contact information. Following top SEO practices, it ensures fast performance and accessibility, while dynamically showcasing legal service details for a smooth user experience. A contact form is seamlessly integrated for easy communication with the firm. Plus, the site is designed for scalability and maintainability, allowing effortless expansion with new features.',
 		technologies: [
 			{ name: 'React', icon: REACT_ICON },
 			{ name: 'Next.js', icon: NEXT_ICON },
@@ -200,21 +203,21 @@ export const projectsList = [
 		github: 'https://github.com/tomaszz95/pzblawcompany',
 		live: 'https://pzblawcompany.vercel.app/',
 		contents: [
-			'fully functional website as a business card for a respected law firm',
-			'main page with some major informations',
-			'four subpages – about us, team, services and contact',
-			'accessibility practices',
-			'SEO practices',
+			'fully functional business card website for a respected law firm',
+			'main page with key information about the firm',
+			'four sub-pages: About Us, Team, Services, and Contact',
+			'accessibility-friendly practices',
+			'SEO-optimized structure',
 			'fully responsive design',
-			'custom `not found` page',
+			'custom "Not Found" page',
 		],
 	},
 	{
 		title: 'ASGeodezja Website',
 		shortDesc:
-			'Landing page created with Next.js and SCSS for a modern, responsive design. SEO optimized and powered by Next.js API routes for dynamic content delivery.',
+			'Landing page for ASGeodezja is built with Next.js, delivering a modern, responsive design. It’s SEO-optimized and uses Next.js API routes for dynamic content delivery.',
 		description:
-			"The application is built with Next.js, written in TypeScript, and styled using CSS Modules. It is a fully responsive website that presents ASGeodezja’s geodetic services, company details, and contact information. The site follows best SEO practices, ensuring high performance and accessibility. A dedicated services page details the firm's offerings, including land surveying, property division, and investment support. Additionally, the contact section allows clients to easily reach out, while the website remains scalable and adaptable for future updates.",
+			'The website is developed with Next.js, TypeScript, and CSS Modules for styling. It’s fully responsive, showcasing ASGeodezja’s geodetic services, company info, and contact details. Following top SEO practices, it ensures fast performance and accessibility. A dedicated services page highlights offerings like land surveying, property division, and investment support. Plus, the contact section makes it easy for clients to get in touch, while the site is designed to be scalable and ready for future updates.',
 		technologies: [
 			{ name: 'React', icon: REACT_ICON },
 			{ name: 'Next.js', icon: NEXT_ICON },
@@ -235,12 +238,12 @@ export const projectsList = [
 		live: 'https://asgeodezja.vercel.app/',
 		contents: [
 			'fully functional website as a business card for a geodesy company in polish language',
-			'main page with some major informations',
+			'main page with key information about the firm',
 			'three subpages – about us, services and contact',
-			'accessibility practices',
-			'SEO practices',
+			'accessibility-friendly practices',
+			'SEO-optimized structure',
 			'fully responsive design',
-			'custom `not found` page',
+			'custom "Not Found" page',
 		],
 	},
 ]

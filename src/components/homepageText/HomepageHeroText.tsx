@@ -4,12 +4,12 @@ import SocialLinks from '../socialIconLinks/SocialLinks'
 const HomepageHeroText = () => {
 	return (
 		<div className='flex flex-col justify-center max-w-lg lg:max-w-1/2 mt-6'>
-			<HeadingOne text='Hello, I am' coloredText='Tomek' />
+			<HeadingOne text='Hi, I am' coloredText='Tomek' />
 			<p className='text-lg lg:text-xl'>
-				<span className='text-hightlight'>Frontend Developer with nearly 3 years of non-comercial experience</span>, skilled in React and
-				Next.js. I’m passionate about crafting clean, responsive web apps and bring growing expertise in full-stack
-				development with Node.js, Express, and databases like MongoDB and SQL. My focus is on delivering high-quality,
-				user-friendly solutions.
+				I am a <span className='text-hightlight'>Frontend Developer</span> with nearly 3 years of non-commercial
+				experience in React and Next.js. I enjoy building clean, responsive web apps, also growing my full-stack skills with
+				Node.js, Express.js, and databases like MongoDB and SQL-based systems. I aim to create practical, user-friendly
+				solutions that prioritize accessibility and SEO performance.
 			</p>
 			<div className='flex flex-col sm:flex-row items-center justify-between mt-10 xl:mt-14 text-center'>
 				<a
