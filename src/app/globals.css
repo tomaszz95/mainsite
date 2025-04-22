@@ -71,6 +71,12 @@ ul :first-child.projectsList section {
 	height: calc(100vh - 110px);
 }
 
+h3 {
+	font-size: 1.4rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 1280px) {
 	.projectsList:nth-of-type(even) .projectPhoto {
 		order: -1;
