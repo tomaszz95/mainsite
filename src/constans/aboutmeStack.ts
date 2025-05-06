@@ -34,7 +34,6 @@ export const techStack = {
 		{ name: 'Node.js', icon: NODE_ICON },
 		{ name: 'Express.js', icon: EXPRESS_ICON },
 		{ name: 'MongoDB', icon: MONGO_ICON },
-		{ name: 'Mongoose', icon: MONGOOSE_ICON },
 		{ name: 'SQL', icon: SQL_ICON },
 		{ name: 'MySQL', icon: MYSQL_ICON },
 		{ name: 'PostgreSQL', icon: POSTGRE_ICON },
@@ -44,6 +43,5 @@ export const techStack = {
 		{ name: 'GraphQL', icon: GRAPHQL_ICON },
 		{ name: 'JEST', icon: JEST_ICON },
 		{ name: 'React Testing Library', icon: RTL_ICON },
-		{ name: 'Github', icon: GITHUB_ICON },
 	],
 }

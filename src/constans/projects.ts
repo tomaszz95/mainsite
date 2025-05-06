@@ -25,14 +25,10 @@ import TAILWIN_ICON from '../assets/icons/tailwind.png'
 import JAVASCRIPT_ICON from '../assets/icons/javascript.png'
 import MONGO_ICON from '../assets/icons/mongo.png'
 import FIREBASE_ICON from '../assets/icons/firebase.png'
-import HTML_ICON from '../assets/icons/html.png'
-import CSS_ICON from '../assets/icons/css.png'
-import GITHUB_ICON from '../assets/icons/github.png'
 import TYPESCRIPT_ICON from '../assets/icons/typescript.png'
 import RTL_ICON from '../assets/icons/ReactTL.png'
 import JEST_ICON from '../assets/icons/jest.png'
 import EXPRESS_ICON from '../assets/icons/express.png'
-import MONGOOSE_ICON from '../assets/icons/mongoose.png'
 import NODE_ICON from '../assets/icons/node.png'
 
 export const selectedProjects = [
@@ -40,21 +36,21 @@ export const selectedProjects = [
 		title: 'Netflix clone',
 		description:
 			"Responsive web app built with Next.js, TypeScript, a touch of React Redux, and Firebase, mimicking Netflix's layout with multiple sub-pages like login/registration, profile selection, and movie/series views. It uses the TMDB database for data, lacking videos and detailed episode info.",
-		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Firebase', 'MongoDB'],
+		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Firebase'],
 		link: '/projects/netflix-clone',
 	},
 	{
 		title: 'E-commerce Website',
 		description:
 			'Fully functional e-commerce website for electronic items, built with Next.js and TypeScript frontend, and a Node.js, Express, and Mongoose backend. The responsive app features multiple pages, including individual product sub-pages with ratings, login/register functionality, and a complete buying process up to payment.',
-		technologies: ['React', 'Next.js', 'Typescript', 'Node.js', 'Express.js', 'Mongoose'],
+		technologies: ['React', 'Next.js', 'Typescript', 'Node.js', 'Express.js', 'MongoDB'],
 		link: '/projects/nextpc',
 	},
 	{
 		title: 'Law Company Page',
 		description:
 			'Professional landing page for a law firm built with Next.js, delivering a sleek, mobile-first design. Dynamic elements are rendered via Next.js and optimized with SEO for greater visibility.',
-		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'Git/Github', 'HTML/CSS'],
+		technologies: ['React', 'Next.js', 'Typescript', 'Javascript', 'HTML/CSS'],
 		link: '/projects/pzblawcompany',
 	},
 ]
@@ -73,7 +69,6 @@ export const projectsList = [
 			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 			{ name: 'Node.js', icon: NODE_ICON },
 			{ name: 'Express.js', icon: EXPRESS_ICON },
-			{ name: 'Mongoose', icon: MONGOOSE_ICON },
 			{ name: 'MongoDB', icon: MONGO_ICON },
 		],
 		link: 'nextpc',
@@ -112,9 +107,6 @@ export const projectsList = [
 			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
 			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
 			{ name: 'Firebase', icon: FIREBASE_ICON },
-			{ name: 'HTML', icon: HTML_ICON },
-			{ name: 'CSS', icon: CSS_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
 		],
 		link: 'netflix-clone',
 		photos: [
@@ -153,7 +145,6 @@ export const projectsList = [
 			{ name: 'Tailwind', icon: TAILWIN_ICON },
 			{ name: 'JEST', icon: JEST_ICON },
 			{ name: 'React Testing Library', icon: RTL_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
 		],
 		link: 'my-portfolio',
 		photos: [
@@ -189,9 +180,6 @@ export const projectsList = [
 			{ name: 'Next.js', icon: NEXT_ICON },
 			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
 			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
-			{ name: 'HTML', icon: HTML_ICON },
-			{ name: 'CSS', icon: CSS_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
 		],
 		link: 'pzblawcompany',
 		photos: [
@@ -223,9 +211,6 @@ export const projectsList = [
 			{ name: 'Next.js', icon: NEXT_ICON },
 			{ name: 'Typescript', icon: TYPESCRIPT_ICON },
 			{ name: 'Javascript', icon: JAVASCRIPT_ICON },
-			{ name: 'HTML', icon: HTML_ICON },
-			{ name: 'CSS', icon: CSS_ICON },
-			{ name: 'Git/Github', icon: GITHUB_ICON },
 		],
 		link: 'asgeodesy',
 		photos: [

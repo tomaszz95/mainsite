@@ -43,7 +43,7 @@ const StackList: React.FC<ComponentType> = ({ stack, classes }) => {
 					key={item.name}
 					className='flex flex-col items-center gap-2'
 					variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}>
-					<Image src={item.icon} alt={`${item.name} icon`} className='w-16 mb-2' />
+					<Image src={item.icon} alt={`${item.name} icon`} className='w-16 h-16 mb-2' />
 					<span className='bg-primary py-3 px-6 xl:text-lg rounded-3xl min-w-[130px]'>{item.name}</span>
 				</motion.li>
 			))}

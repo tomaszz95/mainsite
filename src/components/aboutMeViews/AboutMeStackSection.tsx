@@ -12,16 +12,16 @@ const AboutMeStackSection = () => {
 				<HeadingTwo text='Technology' coloredText='stack' />
 				<div className='grid grid-cols-12 gap-x-8 gap-y-12 lg:gap-x-20'>
 					<div className='col-span-12 lg:col-span-6'>
-						<h3>Frontend</h3>
+						<h3 className='mb-6'>Frontend</h3>
 						<StackList stack={techStack.frontend} classes='xl:grid-cols-4' />
 					</div>
 					<div className='col-span-12 lg:col-span-6'>
-						<h3>Backend / Database</h3>
+						<h3 className='mb-6'>Backend / Database</h3>
 						<StackList stack={techStack.backend} classes='xl:grid-cols-4' />
 					</div>
 					<div className='col-span-12'>
-						<h3>Other</h3>
-						<StackList stack={techStack.other} classes='lg:grid-cols-4 max-w-screen-md mx-auto' />
+						<h3 className='mb-6'>Other</h3>
+						<StackList stack={techStack.other} classes='max-w-screen-md mx-auto' />
 					</div>
 				</div>
 			</CenteredSection>
