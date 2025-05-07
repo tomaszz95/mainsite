@@ -220,7 +220,7 @@ export const projectsList = [
 			{ photo: GEODESY_PHOTO4, alt: 'Our team section in about us site of geodesy company site' },
 		],
 		github: 'https://github.com/tomaszz95/asgeodesy',
-		live: 'https://asgeodezja.vercel.app/',
+		live: 'https://asgeodezja.vercel.app',
 		contents: [
 			'fully functional website as a business card for a geodesy company in polish language',
 			'main page with key information about the firm',
