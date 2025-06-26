@@ -15,7 +15,7 @@ const Header = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false)
 
 	return (
-		<header className='container max-w-[1300px] p-5 lg:px-12 flex items-center justify-between absolute top-0 z-40'>
+		<header className='container max-w-[1300px] p-5 lg:px-12 flex items-center justify-between absolute top-6 z-40'>
 			<Link href='/'>
 				<Image src={LOGO} alt='Tomasz Żuber logo' className='w-14 lg:w-16' priority />
 			</Link>

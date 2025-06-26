@@ -17,7 +17,7 @@ describe('HomepageAboutText component', () => {
 	test('link button has correct href', () => {
 		render(<HomepageAboutText />)
 		const linkButton = screen.getByText('More about me')
-		expect(linkButton).toHaveAttribute('href', '/about')
+		expect(linkButton).toHaveAttribute('href', '/aboutme')
 	})
 
 	test('clicking link button redirects to another page', () => {
