@@ -59,7 +59,7 @@ export const projectsList = [
 	{
 		title: 'NeXtPC E-commerce',
 		shortDesc:
-			'Fully functional e-commerce website for electronic items, built with Next.js and TypeScript frontend, and a Node.js, Express, and Mongoose backend. The responsive app features multiple pages, including product categories, individual product sub-pages with ratings, login/register functionality, and a complete buying process up to payment.',
+			'Fully functional e-commerce website for electronic items, built with Next.js and TypeScript frontend, and a Node.js, Express, and Mongoose backend. The responsive app features multiple pages, including product categories, individual product sub-pages with ratings, login/register functionality and a complete buying process up to payment.',
 		description:
 			'I would like to present my most advanced project, which is a fully functional ecommerce website selling electronic items. I created the entire project from scratch: the frontend was written in Next.js (also Typescript), the backend in Node.js using Express.js and Mongoose, also I used a MongoDB database (REST API). The page is fully responsive - for mobiles, tablets and desktops. The application contains many pages - starting with the home page through individual product categories, sub-pages with individual products, where you can rate the products, the ability to log in/register, and the entire process of buying a product up to payment (which, of course, since this is not a full-fledged application, ends when you have to pay for the product). Being logged in allows you to add products to your favorites, save your data and track products later.',
 		technologies: [
