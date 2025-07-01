@@ -116,7 +116,7 @@ export const projectsList = [
 			{ photo: NETFLIX_PHOTO4, alt: 'View of the editing profile site on the netflix clone site' },
 		],
 		github: 'https://github.com/tomaszz95/Netflixclone',
-		live: 'https://netflixcloneen.vercel.app/',
+		live: 'https://netflixcloneen.vercel.app',
 		contents: [
 			'main pages for guests and logged-in users (slight tweaks for kids, same API data)',
 			'about 30 sub-pages, including dynamic ones with series and movie data',
